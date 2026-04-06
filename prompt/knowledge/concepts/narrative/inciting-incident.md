@@ -76,7 +76,7 @@ updated: 2026-04-06
 4. **困境的三种触发形态对应不同的写作难度**
    - 突变最易写,但容易"巧合感"
    - 缓变最考验伏笔铺陈
-   - 他人带来是"离水之鱼"的典型触发(见 [[../../theory/story-core-and-contrast]])
+   - 他人带来是"离水之鱼"的典型触发(见 [故事核与人物反差](../../theory/story-core-and-contrast.md))
 
 5. **"难 + 一线生机"的硬要求**(【原文】p.7)
    - 【原文】"难、一线生机:给主人公一线生机"
@@ -114,12 +114,12 @@ updated: 2026-04-06
 - 冲分:发展/理想(需要多次催化,难但高分)
 
 ## Links & relations
-- [[../../theory/three-act-structure]] 三幕剧:激励事件 = 情节点 1
-- [[../../theory/fifteen-beat-sheet]] 十五节拍:激励事件 = 催化剂
-- [[../character/desire-goal-motivation]] 欲望/目标/动机:激励事件是把动机从潜在变为显性的触发器
-- [[../character/character-trinity]] 三位一体:激励事件发生前必须建立生活平衡(含三位一体)
-- [[./contrast-three-layers]] 张力三层:激励事件是情节张力的第一次喷发
-- [[../../director-notes/exam-five-event-outline]] 五事件大纲:激励事件 = 第二事件
+- [三幕剧结构](../../theory/three-act-structure.md) 三幕剧:激励事件 = 情节点 1
+- [十五节拍表](../../theory/fifteen-beat-sheet.md) 十五节拍:激励事件 = 催化剂
+- [欲望/目标/动机](../character/desire-goal-motivation.md) 欲望/目标/动机:激励事件是把动机从潜在变为显性的触发器
+- [可怜/可信/可爱 三位一体](../character/character-trinity.md) 三位一体:激励事件发生前必须建立生活平衡(含三位一体)
+- [反差三层](./contrast-three-layers.md) 张力三层:激励事件是情节张力的第一次喷发
+- [五事件大纲法](../../director-notes/exam-five-event-outline.md) 五事件大纲:激励事件 = 第二事件
 
 ## Debates & limits
 - **时间位置的灵活性**。【学界常见解释】Robert McKee 在 *Story* 里并不坚持"前 1/4",他的标准是"**能合理放多晚放多晚**"——只要观众还没睡着。《教父》的激励事件(劫持)发生在差不多 1/4,但《记忆碎片》的激励事件需要观众倒推才能确定。
@@ -149,4 +149,5 @@ updated: 2026-04-06
 - **激励事件与"无动机故事"**:散文化电影(侯孝贤)常常没有明显的激励事件,这种片如何在艺考语境下被评价?
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.6-7 和 p.29 建立初版。含三种触发形态、三档动机、六条检查清单。

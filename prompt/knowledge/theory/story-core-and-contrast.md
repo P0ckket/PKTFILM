@@ -113,15 +113,15 @@ updated: 2026-04-06
 3. 故事核完成:"一个 **[领域]** 专家被迫在 **[非对应环境]** 生存"
 
 ## Links & relations
-- [[./three-act-structure]] 三幕剧:故事核是三幕剧的"前提"
-- [[./fifteen-beat-sheet]] 十五节拍:故事核对应"主题呈现"节拍的内容
-- [[./genre-narratives-overview]] 类型叙事:类型决定故事核的"反差方向"
-- [[../concepts/character-trinity]] 可怜/可信/可爱三位一体:人物反差的具体落地工具
-- [[../concepts/contrast-three-layers]] 张力三层:本笔记的"反差三层"独立概念卡
-- [[../comparison/contrast-vs-conflict]] 反差 vs 冲突:两个概念的严格区分
-- [[../comparison/eastern-vs-western-story-standard]] 东方文以载道 vs 西方探索人性:价值点的选择
-- [[../director-notes/story-core-in-one-line]] 一句话故事核练习卡
-- [[../director-notes/exercise-contrast-engine]] 人物反差发动机练习
+- [三幕剧结构](./three-act-structure.md) 三幕剧:故事核是三幕剧的"前提"
+- [十五节拍表](./fifteen-beat-sheet.md) 十五节拍:故事核对应"主题呈现"节拍的内容
+- [类型叙事总览](./genre-narratives-overview.md) 类型叙事:类型决定故事核的"反差方向"
+- [可怜/可信/可爱 三位一体](../concepts/character-trinity.md) 可怜/可信/可爱三位一体:人物反差的具体落地工具
+- [张力三层](../concepts/contrast-three-layers.md) 张力三层:本笔记的"反差三层"独立概念卡
+- [反差 vs 冲突](../comparison/contrast-vs-conflict.md) 反差 vs 冲突:两个概念的严格区分
+- [东西方故事标准](../comparison/eastern-vs-western-story-standard.md) 东方文以载道 vs 西方探索人性:价值点的选择
+- [一句话故事核练习卡](../director-notes/story-core-in-one-line.md) 一句话故事核练习卡
+- [人物反差发动机练习](../director-notes/exercise-contrast-engine.md) 人物反差发动机练习
 
 ## Debates & limits
 - **"一句话故事"是商业片思维**。【学界常见解释】Hollywood 的 *logline* 正是这个——一部长片必须能用一句话卖给制片人。这种模式不完全适合艺术电影(侯孝贤的《悲情城市》很难一句话概括)。
@@ -141,7 +141,7 @@ updated: 2026-04-06
 | 别混淆 | 正解 |
 |---|---|
 | 故事核 = 主题 | 故事核是"谁做什么",主题是"想表达什么"。故事核可以没主题(差作品),主题不能没故事核。 |
-| 反差 = 冲突 | 反差是**静态的不协调**(形容词层面),冲突是**动态的对立推动**(事件层面)。详见 [[../comparison/contrast-vs-conflict]] |
+| 反差 = 冲突 | 反差是**静态的不协调**(形容词层面),冲突是**动态的对立推动**(事件层面)。详见 [反差 vs 冲突](../comparison/contrast-vs-conflict.md) |
 | 行动 = 动作 | 动作是物理运动(走、跑),行动是带目标的连续动作链。 |
 | 人物张力 = 人物内心戏 | 人物张力是可以通过**外部细节**展示的(一张旧照片、一个习惯性动作),不等于独白。 |
 | 场面张力 = 视觉冲击 | 场面张力是"整体与局部的不协调",不只是视觉炫技(一个安静的户内镜头里一扇敞开的门就是场面张力)。 |
@@ -152,4 +152,5 @@ updated: 2026-04-06
 - **离水之鱼的反例**——是否存在反差反而失效的情况?(eg. 反差太大变成荒诞,观众出戏)
 
 ## Changelog
-- **2026-04-06 v1.0** — 基于 p.40-41 建立初版。故事核公式 + 反差原则 + 张力三层 + 离水之鱼配方已整理。"张力三层"拟独立成 [[../concepts/contrast-three-layers]] 概念卡。
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
+- **2026-04-06 v1.0** — 基于 p.40-41 建立初版。故事核公式 + 反差原则 + 张力三层 + 离水之鱼配方已整理。"张力三层"拟独立成 [张力三层](../concepts/contrast-three-layers.md) 概念卡。

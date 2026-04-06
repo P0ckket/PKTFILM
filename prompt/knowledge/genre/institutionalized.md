@@ -150,12 +150,12 @@ updated: 2026-04-06
 - [ ] 结局是三种牺牲之一吗?
 
 ## Links & relations
-- [[../theory/genre-narratives-overview]] 类型叙事总览:被制度化是 10 类之一
-- [[../theory/conflict-six-types]] 冲突六类:被制度化对应"个体与集体"
-- [[./buddy-love]] 伙伴之情:关系型 vs 群体型的对比
-- [[../comparison/buddy-love-vs-institutionalized]] 伙伴之情 vs 被制度化
-- [[../case-studies/bawang-bieji]] 《霸王别姬》:被制度化的中国版
-- [[../theory/theme-expression-methods]] 主题表达六法:被制度化常用"情节"法 + "人物"法
+- [类型叙事总览](../theory/genre-narratives-overview.md) 类型叙事总览:被制度化是 10 类之一
+- [冲突六大类型](../theory/conflict-six-types.md) 冲突六类:被制度化对应"个体与集体"
+- [伙伴之情](./buddy-love.md) 伙伴之情:关系型 vs 群体型的对比
+- [伙伴之情 vs 被制度化](../comparison/buddy-love-vs-institutionalized.md) 伙伴之情 vs 被制度化
+- [《霸王别姬》](../case-studies/bawang-bieji.md) 《霸王别姬》:被制度化的中国版
+- [主题表达六法](../theory/theme-expression-methods.md) 主题表达六法:被制度化常用"情节"法 + "人物"法
 
 ## Debates & limits
 - **"力量悬殊"的极限**。【学界常见解释】被制度化类型的主角几乎注定无法战胜集体——这是否太悲观?Snyder 在原书里承认"**有极少数情况下主角能毁灭集体**",但"**需要极大的代价**"。
@@ -186,4 +186,5 @@ updated: 2026-04-06
 - **多重被制度化**(主角离开一个集体进入另一个)——是否是一个独立子类?
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.23 + p.28 建立初版。三元素、三种选择 × 三种牺牲、六种集体载体、外来者视角与关键人物都已整理。

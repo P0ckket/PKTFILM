@@ -141,11 +141,11 @@ updated: 2026-04-06
 > "影片多次出现 [动物],[动物] 作为一种意向,通常象征 [寓意 A / B / C]。在本片中,[动物] 与主角 [主角名] 的关系经历了 [关系变化],对应主角 [心境/命运] 的 [变化]。因此 [动物] 在本片中的具体寓意是 [主题阐述]。"
 
 ## Links & relations
-- [[./prop-symbolism]] 道具象征:意向系统的另一个分支(物件类)
-- [[../../theory/theme-expression-methods]] 主题表达六法:动物意向是第 6 法(意向传达)的主要工具
-- [[../cinematic-language/visual-language-overview]] 视听语言总表:动物意向是前景/背景中的视觉符号
-- [[../../story-elements/imagery-and-symbols]] 素材库·意向与符号(待建)
-- [[../../case-studies/bawang-bieji]] 《霸王别姬》:鱼的意向使用
+- [道具象征通则](./prop-symbolism.md) 道具象征:意向系统的另一个分支(物件类)
+- [主题表达六法](../../theory/theme-expression-methods.md) 主题表达六法:动物意向是第 6 法(意向传达)的主要工具
+- [视听语言总览](../cinematic-language/visual-language-overview.md) 视听语言总表:动物意向是前景/背景中的视觉符号
+- [素材库·意向与符号](../../story-elements/imagery-and-symbols.md) 素材库·意向与符号(待建)
+- [《霸王别姬》](../../case-studies/bawang-bieji.md) 《霸王别姬》:鱼的意向使用
 
 ## Debates & limits
 - **动物寓意不是绝对的**。【学界常见解释】Barthes 在《S/Z》里强调符号的"内涵(connotation)是开放的"——同一个动物可以承载矛盾的寓意。本表的"常用寓意"只是**文化基线**,真正的电影分析必须结合具体影片。
@@ -176,4 +176,5 @@ updated: 2026-04-06
 - 【待核实】"猪 = 导演自喻"的出处——是某位学者的观点,还是原笔记老师对《红猪》等作品的归纳?
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.37-39 建立初版。按动物种类重新组织为速查表,保留原电影案例。待补充:狗的负面寓意、鸟类系统、水生动物。

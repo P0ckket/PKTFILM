@@ -41,16 +41,16 @@ updated: 2026-04-06
 - "最害怕" → 道具是**危机**
 - "最不适合" → 道具是**反差**
 
-选"最不适合"的人物 = 自动获得 [[./contrast-engine-method]] 里的"离水之鱼"效果。
+选"最不适合"的人物 = 自动获得 [反差发动机法](./contrast-engine-method.md) 里的"离水之鱼"效果。
 
 ### Step 3:人物 → 三维度(2 分钟)
-用 [[../story-elements/character-design-library]] 快速设定:
+用 [人物设计素材库](../story-elements/character-design-library.md) 快速设定:
 - 可怜 = ____
 - 可信(缺陷) = ____
 - 可爱 = ____
 
 ### Step 4:五事件大纲(8 分钟)
-用 [[./five-event-outline]] 的模板:
+用 [五事件大纲法](./five-event-outline.md) 的模板:
 | 事件 | 道具功能 | 一句话 |
 |---|---|---|
 | 开场(400) | 价值 or 反差 | 道具出场,主角出场 |
@@ -118,10 +118,11 @@ updated: 2026-04-06
 | 道具太多 | 记忆点分散 | 一个主道具贯穿五事件 |
 
 ## Links & relations
-- [[../story-elements/props-and-six-uses-library]] 道具八法素材库:每种功能的大量案例
-- [[./five-event-outline]] 五事件大纲:大纲模板
-- [[./contrast-engine-method]] 反差发动机:人物×道具的反差选择
-- [[../concepts/symbolism/prop-symbolism]] 道具象征理论
+- [道具与六用素材库](../story-elements/props-and-six-uses-library.md) 道具八法素材库:每种功能的大量案例
+- [五事件大纲法](./five-event-outline.md) 五事件大纲:大纲模板
+- [反差发动机法](./contrast-engine-method.md) 反差发动机:人物×道具的反差选择
+- [道具象征通则](../concepts/symbolism/prop-symbolism.md) 道具象征理论
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 综合 p.40, p.43, p.44-47 的方法论建立初版。含"火柴"完整示例。

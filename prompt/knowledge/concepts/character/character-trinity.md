@@ -23,7 +23,7 @@ updated: 2026-04-06
 - **可怜(Pitiable)**:让观众产生同情的条件——职业卑微、被欺负、不幸遭遇、缺陷、贫困。是让观众**愿意站到主角一边**的首要钩子。
 - **可信(Credible)**:让观众觉得人物"是真人"的条件——缺陷、坏习惯、脾气、不完美的道德。是让人物**不像神**的保险。
 - **可爱(Lovable)**:让观众主动**想看这个人过得好**的条件——做一件美好的小事、帮助弱者、关心家人、展现善意。Blake Snyder 的"**救猫咪(Save the Cat)**"时刻就是"可爱"的具体操作。
-- **原始欲望 / 高级欲望**:见 [[./desire-goal-motivation]]。可怜/可信/可爱解决"观众为什么跟这个人",欲望解决"这个人为什么动起来"。
+- **原始欲望 / 高级欲望**:见 [欲望/目标/动机](./desire-goal-motivation.md)。可怜/可信/可爱解决"观众为什么跟这个人",欲望解决"这个人为什么动起来"。
 
 ## Key terms
 
@@ -127,15 +127,15 @@ p.1 给出的硬规则是 **"可爱 > 可信 > 可怜"**——可爱最重要。
 - 主角可信 + 可爱(缺可怜) → 小资,没有共情钩子
 
 ## Links & relations
-- [[./desire-goal-motivation]] 欲望/目标/动机:人物塑造三要素的另外两栏
-- [[./save-the-cat-moment]] 救猫咪时刻:可爱的具体操作
-- [[./character-arc-mechanism]] 缺点→困境→欲望→目标:可信在人物弧光中的演化
-- [[../../theory/story-core-and-contrast]] 故事核:三位一体是人物反差的第一个可操作工具
-- [[../../theory/three-act-structure]] 三幕剧:开场事件必须完成三位一体的展示
-- [[../narrative/inciting-incident]] 激励事件:打破平衡之前必须先建立平衡,而平衡的建立就是三位一体
-- [[../../case-studies/baiyuan-no-koi]] 《百元之恋》人物拆解(可怜 + 可信 + 可爱的典型案例)
-- [[../../director-notes/exercise-character-trinity]] 三位一体练习卡
-- [[../../story-elements/character-design]] 素材库·人物设计:更多可怜/可信/可爱的素材
+- [欲望/目标/动机](./desire-goal-motivation.md) 欲望/目标/动机:人物塑造三要素的另外两栏
+- [救猫咪时刻](./save-the-cat-moment.md) 救猫咪时刻:可爱的具体操作
+- [人物弧光机制](./character-arc-mechanism.md) 缺点→困境→欲望→目标:可信在人物弧光中的演化
+- [故事核与人物反差](../../theory/story-core-and-contrast.md) 故事核:三位一体是人物反差的第一个可操作工具
+- [三幕剧结构](../../theory/three-act-structure.md) 三幕剧:开场事件必须完成三位一体的展示
+- [激励事件](../narrative/inciting-incident.md) 激励事件:打破平衡之前必须先建立平衡,而平衡的建立就是三位一体
+- [《百元之恋》](../../case-studies/baiyuan-no-koi.md) 《百元之恋》人物拆解(可怜 + 可信 + 可爱的典型案例)
+- [三位一体练习卡](../../director-notes/exercise-character-trinity.md) 三位一体练习卡
+- [素材库·人物设计](../../story-elements/character-design.md) 素材库·人物设计:更多可怜/可信/可爱的素材
 
 ## Debates & limits
 - **三位一体不是全球剧作通用法**。【学界常见解释】好莱坞传统(Syd Field / Linda Seger)更强调 "character wants" 和 "character needs" 的对立;Robert McKee 讲 "gap between expectation and reality"——这些框架都没有"可怜/可信/可爱"这样的表述。
@@ -167,4 +167,5 @@ p.1 给出的硬规则是 **"可爱 > 可信 > 可怜"**——可爱最重要。
 - **"救猫咪"是否就是可爱的全部?**——p.1 列出的救猫咪只有 3 项(孩子/下属/失物),但可爱的层面有 4 个(道德/性格/外形/技能)。两者关系还需更精细的拆分。
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.1 + p.11 + p.33 + p.48 建立初版。含 4 个层面、优先级讨论、《叫我第一名》与《荒岛求生》两个案例拆解、三角平衡自检表。

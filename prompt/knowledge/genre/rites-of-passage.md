@@ -120,12 +120,12 @@ updated: 2026-04-06
 - [ ] 主角是否**变了**?(结局可以赢可以输,但必须变)
 
 ## Links & relations
-- [[../theory/genre-narratives-overview]] 类型叙事总览:变迁仪式是 10 类之一
-- [[../theory/conflict-six-types]] 冲突六类:变迁仪式对应"现实与理想"
-- [[../concepts/character/character-arc-mechanism]] 人物弧光机制:变迁仪式是最纯粹的弧光类型
-- [[../concepts/character/desire-goal-motivation]] 欲望/目标/动机:变迁仪式的 "want" 无法实现,必须转向 "need"
-- [[../theory/theme-expression-methods]] 主题表达六法:变迁仪式常用"人物性格"法 + "意向"法
-- [[../case-studies/baiyuan-no-koi]] 《百元之恋》:变迁仪式 + 运动片的混血
+- [类型叙事总览](../theory/genre-narratives-overview.md) 类型叙事总览:变迁仪式是 10 类之一
+- [冲突六大类型](../theory/conflict-six-types.md) 冲突六类:变迁仪式对应"现实与理想"
+- [人物弧光机制](../concepts/character/character-arc-mechanism.md) 人物弧光机制:变迁仪式是最纯粹的弧光类型
+- [欲望/目标/动机](../concepts/character/desire-goal-motivation.md) 欲望/目标/动机:变迁仪式的 "want" 无法实现,必须转向 "need"
+- [主题表达六法](../theory/theme-expression-methods.md) 主题表达六法:变迁仪式常用"人物性格"法 + "意向"法
+- [《百元之恋》](../case-studies/baiyuan-no-koi.md) 《百元之恋》:变迁仪式 + 运动片的混血
 
 ## Debates & limits
 - **"主角不一定战胜困难"的商业风险**。【学界常见解释】变迁仪式是文艺片最常见的类型,但商业市场接受度较低——因为观众没有"爽感"。
@@ -155,4 +155,5 @@ updated: 2026-04-06
 - 【待核实】Snyder 原书对本类型的 beat sheet 是否与原笔记的"寻常问题 → 过激方式 → 回归正确方法"三段式一致?
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.22 + p.28 建立初版。三元素、六种衍生类型、松子案例拆解已整理。

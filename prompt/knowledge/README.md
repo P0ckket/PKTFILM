@@ -7,16 +7,16 @@
 
 ## 快速入口
 
-| 我想… | 去这里 |
-|---|---|
-| 看所有笔记的总地图 | [index/moc.md](index/moc.md) |
-| 查一个术语的定义 | [index/term-glossary.md](index/term-glossary.md) |
-| 查某部电影被引用在哪 | [index/film-case-index.md](index/film-case-index.md) |
-| 写艺考故事，找大纲框架 | [director-notes/five-event-outline.md](director-notes/five-event-outline.md) |
-| 找命题词，不知道怎么展开 | [director-notes/prop-to-scene-method.md](director-notes/prop-to-scene-method.md) |
-| 想找一个道具/场景/冲突的素材 | [story-elements/](#故事元素素材库) |
+| 我想…               | 去这里                                                                                                                                      |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| 看所有笔记的总地图         | [index/moc.md](index/moc.md)                                                                                                             |
+| 查一个术语的定义          | [index/term-glossary.md](index/term-glossary.md)                                                                                         |
+| 查某部电影被引用在哪        | [index/film-case-index.md](index/film-case-index.md)                                                                                     |
+| 写艺考故事，找大纲框架       | [director-notes/five-event-outline.md](director-notes/five-event-outline.md)                                                             |
+| 找命题词，不知道怎么展开      | [director-notes/prop-to-scene-method.md](director-notes/prop-to-scene-method.md)                                                         |
+| 想找一个道具/场景/冲突的素材   | [story-elements/](#故事元素素材库)                                                                                                              |
 | 查某个职业（医生/警察）怎么写真实 | [story-elements/profession-doctor.md](story-elements/profession-doctor.md) · [profession-police.md](story-elements/profession-police.md) |
-| 看某部电影的完整拆解 | [case-studies/](#案例分析) |
+| 看某部电影的完整拆解        | [case-studies/](#案例分析)                                                                                                                   |
 
 ---
 

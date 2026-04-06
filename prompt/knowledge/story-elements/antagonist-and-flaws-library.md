@@ -38,7 +38,7 @@ updated: 2026-04-06
 - **恋爱或婚姻中不忠诚**
 - **利用他人达到自己的目的**
 
-**使用要点**:主角的缺陷是**人物弧光的起点**——看 [[../concepts/character/character-arc-mechanism]]。没有缺陷就没有变化,没有变化就没有主题。
+**使用要点**:主角的缺陷是**人物弧光的起点**——看 [人物弧光机制](../concepts/character/character-arc-mechanism.md)。没有缺陷就没有变化,没有变化就没有主题。
 
 ## 动机库
 
@@ -140,11 +140,11 @@ updated: 2026-04-06
 **【我的理解】**:反派的缺陷是**行动引擎**(让他主动害人),主角的缺陷是**内在障碍**(让他无法解决问题)。两者性质不同不能混用——主角如果是"贪婪"级别的缺陷,他就成反派了。
 
 ## Links & relations
-- [[./character-design-library]] 人物设计素材库:主角身份的正向面
-- [[../concepts/character/character-arc-mechanism]] 人物弧光:缺点→困境→欲望→目标
-- [[../concepts/character/character-trinity]] 可怜/可信/可爱:缺陷=可信维度
-- [[./emotion-and-relation-library]] 情感与关系素材库
-- [[../theory/theme-expression-methods]] 主题表达六法:反派可以承载主题
+- [人物设计素材库](./character-design-library.md) 人物设计素材库:主角身份的正向面
+- [人物弧光机制](../concepts/character/character-arc-mechanism.md) 人物弧光:缺点→困境→欲望→目标
+- [可怜/可信/可爱 三位一体](../concepts/character/character-trinity.md) 可怜/可信/可爱:缺陷=可信维度
+- [情感与关系素材库](./emotion-and-relation-library.md) 情感与关系素材库
+- [主题表达六法](../theory/theme-expression-methods.md) 主题表达六法:反派可以承载主题
 
 ## Debates & limits
 - **"四种反派缺陷"过于简化**。现代剧作的反派趋向"灰色"——既有可怕的一面,也有可理解的一面。纯粹的贪婪/嫉妒反派容易脸谱化。
@@ -152,4 +152,5 @@ updated: 2026-04-06
 - **动机清单是素材库不是公式**。不要机械组合——"他童年阴影所以冲动"这种直接因果会让故事变幼稚。真正的动机常常是**多条合力**。
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 整合 p.2, p.11, p.12, p.15, p.16, p.32, p.36, p.45 的反派/缺陷/动机素材建立初版。

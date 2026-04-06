@@ -166,12 +166,12 @@ updated: 2026-04-06
 3. **不要忘记内部冲突**——纯外部升级会让故事变成闯关游戏,没有主题
 
 ## Links & relations
-- [[../theory/conflict-six-types]] 冲突六类:悬念和冲突对应六种冲突类型
-- [[../theory/fifteen-beat-sheet]] 十五节拍:悬念对应"铺垫→催化→争执→中点→坏蛋逼近"
-- [[../genre/thriller-elements]] 惊悚片要素:困难升级 + 紧张词汇
-- [[../genre/dude-with-a-problem]] 麻烦家伙:升级麻烦的方法论
-- [[./props-and-six-uses-library]] 道具素材库:悬念道具
-- [[./scene-and-setting-library]] 场景素材库:紧张情节环境
+- [冲突六大类型](../theory/conflict-six-types.md) 冲突六类:悬念和冲突对应六种冲突类型
+- [十五节拍表](../theory/fifteen-beat-sheet.md) 十五节拍:悬念对应"铺垫→催化→争执→中点→坏蛋逼近"
+- [惊悚片要素](../genre/thriller-elements.md) 惊悚片要素:困难升级 + 紧张词汇
+- [麻烦家伙](../genre/dude-with-a-problem.md) 麻烦家伙:升级麻烦的方法论
+- [道具与六用素材库](./props-and-six-uses-library.md) 道具素材库:悬念道具
+- [场景与环境素材库](./scene-and-setting-library.md) 场景素材库:紧张情节环境
 
 ## Debates & limits
 - **原笔记的升级方式有重叠**。p.2 的"时间压力"和 p.15 的"时间压力"、p.10 的"时间限制的压迫"本质是同一条——说明"时间限制"是**最万能的冲突升级手段**。
@@ -179,4 +179,5 @@ updated: 2026-04-06
 - 【你的推断】原笔记几乎没有提到"降级"——即主角主动让步/放弃以制造反差。降级可以是更高级的冲突设计:主角放弃了一切后,最后的升级才有重量。
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 整合 p.2, p.7, p.10, p.13, p.15, p.28, p.45 的悬念/冲突/反转/两难素材建立初版。

@@ -74,10 +74,11 @@ updated: 2026-04-06
 2. 同一个设定(军队新兵),分别设计一个"伙伴之情版"和一个"被制度化版"的故事核。
 
 ## Links & relations
-- [[../genre/buddy-love]] 伙伴之情:详细类型卡
-- [[../genre/institutionalized]] 被制度化:详细类型卡
-- [[../theory/genre-narratives-overview]] 类型叙事总览:10 类中的定位
-- [[../theory/conflict-six-types]] 冲突六类:信息错位 vs 力量悬殊
+- [伙伴之情](../genre/buddy-love.md) 伙伴之情:详细类型卡
+- [被制度化](../genre/institutionalized.md) 被制度化:详细类型卡
+- [类型叙事总览](../theory/genre-narratives-overview.md) 类型叙事总览:10 类中的定位
+- [冲突六大类型](../theory/conflict-six-types.md) 冲突六类:信息错位 vs 力量悬殊
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.20-23 + Snyder 类型学建立初版。

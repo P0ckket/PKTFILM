@@ -101,12 +101,12 @@ updated: 2026-04-06
 - 高潮事件:放大**场面张力**(整体 vs 局部 的极致)
 
 ## Links & relations
-- [[../../theory/story-core-and-contrast]] 故事核与人物反差:本卡的上游理论
-- [[../../theory/conflict-six-types]] 冲突六大类型:张力是冲突的表达形态
-- [[../character/character-trinity]] 三位一体:人物张力的具体落地
-- [[../cinematic-language/visual-language-overview]] 视听语言总表:场面张力的技术支持
-- [[../../comparison/contrast-vs-conflict]] 反差 vs 冲突:两个近义概念的区分
-- [[../../director-notes/exercise-three-layer-tension]] 三层张力练习卡(待建)
+- [故事核与人物反差](../../theory/story-core-and-contrast.md) 故事核与人物反差:本卡的上游理论
+- [冲突六大类型](../../theory/conflict-six-types.md) 冲突六大类型:张力是冲突的表达形态
+- [可怜/可信/可爱 三位一体](../character/character-trinity.md) 三位一体:人物张力的具体落地
+- [视听语言总览](../cinematic-language/visual-language-overview.md) 视听语言总表:场面张力的技术支持
+- [反差 vs 冲突](../../comparison/contrast-vs-conflict.md) 反差 vs 冲突:两个近义概念的区分
+- [三层张力练习卡](../../director-notes/exercise-three-layer-tension.md) 三层张力练习卡(待建)
 
 ## Debates & limits
 - **"张力三层"不是学界标准术语**。【学界常见解释】西方叙事学常用 "narrative tension",偶尔拆分为 "suspense / mystery / surprise"(Alfred Hitchcock)或 "expectation vs outcome"(Linda Seger),但没有"人物/情节/场面"这种三层拆法。
@@ -136,4 +136,5 @@ updated: 2026-04-06
 - **三层之间的权重**是否有规律?——写作时应该优先保证哪一层?
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.40 建立初版。六对对立项、自检表、三层对应的创作工种都已梳理。标为**原笔记可能的原创理论**,待后续教材比对。

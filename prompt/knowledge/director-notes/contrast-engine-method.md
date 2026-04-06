@@ -51,7 +51,7 @@ updated: 2026-04-06
 | 都市人进入原始世界 | 《荒岛求生》 |
 
 ### 第五步:检验三层张力(p.40)
-见 [[../concepts/narrative/contrast-three-layers]] 的详细分析:
+见 [反差三层](../concepts/narrative/contrast-three-layers.md) 的详细分析:
 
 | 张力层 | 反差轴 | 检验问题 |
 |---|---|---|
@@ -95,16 +95,17 @@ updated: 2026-04-06
 
 ## Seed list
 可以从以下素材库抽取"人物"和"行动"的反差组合:
-- [[../story-elements/character-design-library]] → 选人物身份
-- [[../story-elements/scene-and-setting-library]] → 选"离水"的环境
-- [[../story-elements/suspense-and-conflict-library]] → 选行动类型
-- [[../story-elements/props-and-six-uses-library]] → 选一个道具作为"桥梁"
+- [人物设计素材库](../story-elements/character-design-library.md) → 选人物身份
+- [场景与环境素材库](../story-elements/scene-and-setting-library.md) → 选"离水"的环境
+- [悬念与冲突素材库](../story-elements/suspense-and-conflict-library.md) → 选行动类型
+- [道具与六用素材库](../story-elements/props-and-six-uses-library.md) → 选一个道具作为"桥梁"
 
 ## Links & relations
-- [[../theory/story-core-and-contrast]] 故事核与反差:理论基础
-- [[../concepts/narrative/contrast-three-layers]] 反差三层:人物/情节/场面张力详解
-- [[./five-event-outline]] 五事件大纲:反差发动机 → 五事件展开
-- [[../concepts/character/character-arc-mechanism]] 人物弧光:反差 = 弧光的起点
+- [故事核与人物反差](../theory/story-core-and-contrast.md) 故事核与反差:理论基础
+- [反差三层](../concepts/narrative/contrast-three-layers.md) 反差三层:人物/情节/场面张力详解
+- [五事件大纲法](./five-event-outline.md) 五事件大纲:反差发动机 → 五事件展开
+- [人物弧光机制](../concepts/character/character-arc-mechanism.md) 人物弧光:反差 = 弧光的起点
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.40 的故事核/反差/离水之鱼/张力三层建立初版。

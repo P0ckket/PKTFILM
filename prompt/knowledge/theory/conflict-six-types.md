@@ -85,11 +85,11 @@ updated: 2026-04-06
 - **混合冲突是高阶技巧**。eg.《肖申克的救赎》主线"个体与集体"、副线"信息错位"(知更鸟的秘密)。
 
 ## Links & relations
-- [[./genre-narratives-overview]] 类型叙事总览:冲突是类型的动力来源
-- [[./three-act-structure]] 三幕剧:冲突的时间分布
-- [[../concepts/dilemma-and-trade-off]] 两难抉择:冲突在人物心中的投射
-- [[../concepts/contrast-three-layers]] 张力三层:冲突的层次(人物/情节/场面)
-- [[../comparison/contrast-vs-conflict]] 反差 vs 冲突:容易混淆的两个近义词
+- [类型叙事总览](./genre-narratives-overview.md) 类型叙事总览:冲突是类型的动力来源
+- [三幕剧结构](./three-act-structure.md) 三幕剧:冲突的时间分布
+- [两难抉择](../concepts/dilemma-and-trade-off.md) 两难抉择:冲突在人物心中的投射
+- [张力三层](../concepts/contrast-three-layers.md) 张力三层:冲突的层次(人物/情节/场面)
+- [反差 vs 冲突](../comparison/contrast-vs-conflict.md) 反差 vs 冲突:容易混淆的两个近义词
 
 ## Debates & limits
 - **"六类冲突"不是学界公认分类**。【学界常见解释】西方叙事学更常用 Gustav Freytag 的"内在/外在冲突"二分,或 Lajos Egri 的"前提 → 冲突 → 解决"三角。p.28 的六类法更接近**创作实务归纳**。
@@ -106,7 +106,7 @@ updated: 2026-04-06
 
 | 别混淆 | 正解 |
 |---|---|
-| 冲突 = 反差 | 冲突是故事动力,反差是表达技巧。详见 [[../comparison/contrast-vs-conflict]] |
+| 冲突 = 反差 | 冲突是故事动力,反差是表达技巧。详见 [反差 vs 冲突](../comparison/contrast-vs-conflict.md) |
 | 冲突类型 = 类型叙事 | 类型叙事是"故事的困境结构",冲突类型是"困境的动力来源",前者是壳,后者是核。 |
 | "个体与集体" = "人与社会" | 个体与集体强调"力量悬殊的规则系统";人与社会是更宽的哲学说法,包括温和的舆论压力等。 |
 | 现实与理想 = 梦想破灭 | 现实与理想可以是"主角接受了另一种生活",不一定是梦想破灭——《海街日记》就是。 |
@@ -117,4 +117,5 @@ updated: 2026-04-06
 - **冲突类型的组合规律**是否有稳定模式?(目前只是一些经验性混合例子)
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.28 建立初版。6 个冲突类型与对应类型叙事的映射已整理,出处与学术对接待后续材料。

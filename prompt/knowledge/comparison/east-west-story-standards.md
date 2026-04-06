@@ -66,10 +66,11 @@ updated: 2026-04-06
 2. 同一个故事核,分别写一个"统考版"(东方标准)和一个"校考版"(西方标准),感受价值取向对情节选择的影响。
 
 ## Links & relations
-- [[../theory/story-core-and-contrast]] 故事核与反差:民间标准 + 专业标准
-- [[../theory/theme-expression-methods]] 主题表达六法:东西方主题表达偏好不同
-- [[../director-notes/five-event-outline]] 五事件大纲:两种标准下的结局选择
-- [[../genre/rites-of-passage]] 变迁仪式:东方叙事最亲近的 Snyder 类型
+- [故事核与人物反差](../theory/story-core-and-contrast.md) 故事核与反差:民间标准 + 专业标准
+- [主题表达六法](../theory/theme-expression-methods.md) 主题表达六法:东西方主题表达偏好不同
+- [五事件大纲法](../director-notes/five-event-outline.md) 五事件大纲:两种标准下的结局选择
+- [变迁仪式](../genre/rites-of-passage.md) 变迁仪式:东方叙事最亲近的 Snyder 类型
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.40 的民间标准 + 专业标准建立初版。

@@ -45,7 +45,7 @@ updated: 2026-04-06
 - 第二幕 600 字(对抗)
 - 第三幕 300 字(结局)
 
-> 注意:这 1200 字不是 2000 字全部;p.41 给出的是**五事件**结构(400×5 = 2000 字),即把三幕再细分。详见 [[../theory/story-core-and-contrast]]。
+> 注意:这 1200 字不是 2000 字全部;p.41 给出的是**五事件**结构(400×5 = 2000 字),即把三幕再细分。详见 [故事核与人物反差](../theory/story-core-and-contrast.md)。
 
 ## Claims
 
@@ -102,15 +102,15 @@ updated: 2026-04-06
 - 理想 / 信念 → 需要多次催化,老师最高看
 
 ## Links & relations
-- [[./fifteen-beat-sheet]] Save the Cat 十五节拍:在三幕剧内做更细的节拍切分
-- [[../concepts/inciting-incident]] 激励事件的独立概念卡(困境分类、动机分级)
-- [[../concepts/dilemma-and-trade-off]] 两难抉择:情节点 2 常用的生机结构
-- [[./story-core-and-contrast]] 故事核:三幕剧的"一句话概括"前提
-- [[../director-notes/exam-five-event-outline]] 艺考五事件大纲:三幕剧的艺考细分版(400×5)
+- [十五节拍表](./fifteen-beat-sheet.md) Save the Cat 十五节拍:在三幕剧内做更细的节拍切分
+- [激励事件](../concepts/inciting-incident.md) 激励事件的独立概念卡(困境分类、动机分级)
+- [两难抉择](../concepts/dilemma-and-trade-off.md) 两难抉择:情节点 2 常用的生机结构
+- [故事核与人物反差](./story-core-and-contrast.md) 故事核:三幕剧的"一句话概括"前提
+- [五事件大纲法](../director-notes/exam-five-event-outline.md) 艺考五事件大纲:三幕剧的艺考细分版(400×5)
 
 ## Debates & limits
 - **三幕剧的普遍性有学界争议**。【学界常见解释】Syd Field 的《Screenplay》把它推为"好莱坞主流范式",但 David Bordwell、Kristin Thompson 等人认为古典好莱坞更适合用"四段式(setup–complicating action–development–climax)"描述(Thompson, *Storytelling in the New Hollywood*, 1999)。三幕剧是**工作室与写作教学**的简化用法,不是电影本体论。
-- **三幕与东方叙事传统的兼容性问题**。【我的理解】"起承转合"(四段)、中国章回体(多集群)、日本的"序破急"(三段但比例 1:4:1 而非 1:2:1)都不完全吻合 1:2:1。艺考语境下仍推三幕,是因为**考试评分以西式叙事为基准**(见 [[../comparison/eastern-vs-western-story-standard]])。
+- **三幕与东方叙事传统的兼容性问题**。【我的理解】"起承转合"(四段)、中国章回体(多集群)、日本的"序破急"(三段但比例 1:4:1 而非 1:2:1)都不完全吻合 1:2:1。艺考语境下仍推三幕,是因为**考试评分以西式叙事为基准**(见 [东西方故事标准](../comparison/eastern-vs-western-story-standard.md))。
 - 【你的推断】因此在"校考面试 + 西方电影评论"场景下用三幕剧最划算;在"分析国产文艺片 + 统考主题写作"场景下,三幕剧只是脚手架,不是天花板。
 
 ## Directing takeaways
@@ -135,4 +135,5 @@ updated: 2026-04-06
 - **是否应该区分"编剧的三幕"与"拍片的三幕"?**——编剧的三幕是叙事单元,拍片的三幕还涉及情感曲线的起伏节奏。
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于故事元素积累6_merged.pdf p.6-7 建立初版。含激励事件、情节点、动机分级、困境三形态、艺考字数比例。待用户提供 Syd Field / Robert McKee / David Bordwell 等原著时做交叉校验。

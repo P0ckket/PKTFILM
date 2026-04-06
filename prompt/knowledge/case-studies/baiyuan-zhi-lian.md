@@ -102,11 +102,12 @@ updated: 2026-04-06
 | **责任型** | 一个需要成长的主角突然被委托一个责任/人物(照顾家人/教导学生)→ 一开始排斥 → 慢慢改变 → 完成责任完成成长 | 伙伴之情/变迁仪式混血 |
 
 ## Links & relations
-- [[../concepts/character/character-arc-mechanism]] 人物弧光：本案例的理论基础
-- [[../director-notes/five-event-outline]] 五事件大纲：本案例是大纲的实操模板
-- [[../genre/rites-of-passage]] 变迁仪式：百元之恋属于变迁仪式型
-- [[../concepts/character/desire-goal-motivation]] 欲望/目标/动机：欲望(抽象) vs 目标(具体)
-- [[../concepts/character/character-trinity]] 三位一体：开场的可怜/可信/可爱设计
+- [人物弧光机制](../concepts/character/character-arc-mechanism.md) 人物弧光：本案例的理论基础
+- [五事件大纲法](../director-notes/five-event-outline.md) 五事件大纲：本案例是大纲的实操模板
+- [变迁仪式](../genre/rites-of-passage.md) 变迁仪式：百元之恋属于变迁仪式型
+- [欲望/目标/动机](../concepts/character/desire-goal-motivation.md) 欲望/目标/动机：欲望(抽象) vs 目标(具体)
+- [可怜/可信/可爱 三位一体](../concepts/character/character-trinity.md) 三位一体：开场的可怜/可信/可爱设计
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.48-49 建立初版。完整弧光链 + 五事件实操对照。

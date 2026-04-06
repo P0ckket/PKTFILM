@@ -119,11 +119,11 @@ updated: 2026-04-06
 - **这五种里哪一种最像你的人物?选它。**
 
 ## Links & relations
-- [[../../theory/theme-expression-methods]] 主题表达六法:台词是主题表达第 4 法
-- [[../character/character-trinity]] 三位一体:台词必须体现可信维度
-- [[../../comparison/life-dialogue-vs-story-dialogue]] 生活对话 vs 故事对话(比较卡,待建)
-- [[../../director-notes/exam-dialogue-rewrite]] 一句改五遍练习卡
-- [[../../story-elements/dialogue-lines]] 素材库·台词(待建)
+- [主题表达六法](../../theory/theme-expression-methods.md) 主题表达六法:台词是主题表达第 4 法
+- [可怜/可信/可爱 三位一体](../character/character-trinity.md) 三位一体:台词必须体现可信维度
+- [生活对话 vs 故事对话](../../comparison/life-dialogue-vs-story-dialogue.md) 生活对话 vs 故事对话(比较卡,待建)
+- [一句改五遍练习卡](../../director-notes/exam-dialogue-rewrite.md) 一句改五遍练习卡
+- [素材库·台词](../../story-elements/dialogue-lines.md) 素材库·台词(待建)
 
 ## Debates & limits
 - **"不直接回答"的边界**。【学界常见解释】Aaron Sorkin 的剧作以"快速、精准、直接"著称(《白宫风云》《社交网络》),几乎和"不直接回答"相反——但 Sorkin 的直接是**带智力攻击性**的直接,不是生活式的直接。规则有例外。
@@ -153,4 +153,5 @@ updated: 2026-04-06
 - **东方对话传统的"含蓄"是否等同于"避免直接"?**——两者表面像,但东方含蓄更强调"点到为止",避免直接更强调"偏移"。需要进一步区分。
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.11 + p.24 建立初版。六技巧 + 三口径 + 生活/故事对话五条对比。待与 Robert McKee《对白:文字、场景与银幕的剧作艺术》做交叉校验。

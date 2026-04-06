@@ -21,7 +21,7 @@ updated: 2026-04-06
 ## 一、服饰四要素(p.60)
 | 要素 | 功能 |
 |---|---|
-| **色彩** | 情绪、身份、阵营(参考 [[../concepts/cinematic-language/visual-language-overview]] 的色彩板块) |
+| **色彩** | 情绪、身份、阵营(参考 [视听语言总览](../concepts/cinematic-language/visual-language-overview.md) 的色彩板块) |
 | **质地** | 阶级、生活状态(丝绸 vs 粗布,崭新 vs 破旧) |
 | **样式** | 时代、职业、性格(制服 vs 便装,保守 vs 夸张) |
 | **效果** | 观众接收到的综合印象(威严/可怜/滑稽/神秘) |
@@ -39,7 +39,7 @@ updated: 2026-04-06
 | **动词 + 名词 = 人物动作和穿着结合** | "她卷起袖子"——穿着+动作同时建立性格 |
 | **服装的变化 = 人物成长与蜕变** | 开场穿灰色→结尾穿红色——视觉化弧光 |
 
-**使用要点**:服装变化是 [[../concepts/character/character-arc-mechanism]] 在视觉层面的**最简表达**——不用任何台词,让主角在高潮时换一件衣服,弧光就完成了。
+**使用要点**:服装变化是 [人物弧光机制](../concepts/character/character-arc-mechanism.md) 在视觉层面的**最简表达**——不用任何台词,让主角在高潮时换一件衣服,弧光就完成了。
 
 ## 四、遮挡/隔绝类服饰(p.60)
 - **手套**——隐藏/保护/掌控/阻碍
@@ -72,7 +72,7 @@ updated: 2026-04-06
 2. **一旦形成**:会影响与世界交互的方式
 3. **造成影响**:行为怎么进一步改变了生活,形成了他的现况
 
-**使用要点**:这三层对应 [[../concepts/character/character-arc-mechanism]] 的起点链——**形成原因(过去) → 具体表现(现在) → 造成影响(困境)**。写清这条链,人物就不是"设定",而是"有来历的人"。
+**使用要点**:这三层对应 [人物弧光机制](../concepts/character/character-arc-mechanism.md) 的起点链——**形成原因(过去) → 具体表现(现在) → 造成影响(困境)**。写清这条链,人物就不是"设定",而是"有来历的人"。
 
 ## Method / How to use
 
@@ -91,16 +91,17 @@ updated: 2026-04-06
 → 回答完三问,一个有来历的人物就立住了。
 
 ## Links & relations
-- [[../concepts/cinematic-language/visual-language-overview]] 视听语言:色彩/构图与服饰
-- [[../concepts/character/character-arc-mechanism]] 人物弧光:服装变化是弧光的视觉化
-- [[../concepts/character/character-trinity]] 三位一体:穿着影响可怜/可信/可爱感知
-- [[./character-design-library]] 人物设计素材:穿着是身份的视觉层
-- [[../genre/institutionalized]] 被制度化:制服=集体表征
+- [视听语言总览](../concepts/cinematic-language/visual-language-overview.md) 视听语言:色彩/构图与服饰
+- [人物弧光机制](../concepts/character/character-arc-mechanism.md) 人物弧光:服装变化是弧光的视觉化
+- [可怜/可信/可爱 三位一体](../concepts/character/character-trinity.md) 三位一体:穿着影响可怜/可信/可爱感知
+- [人物设计素材库](./character-design-library.md) 人物设计素材:穿着是身份的视觉层
+- [被制度化](../genre/institutionalized.md) 被制度化:制服=集体表征
 
 ## Debates & limits
 - **原笔记对穿着的讨论偏向"符号化"**——把衣服当做信息载体,而不是审美对象。这是剧作视角而非造型设计视角。
 - 【我的理解】艺考编讲故事里,**一个有记忆点的穿着细节 > 三行外貌描写**。"他穿着一双不匹配的鞋子"就够了。
-- 【你的推断】遮挡类服饰(手套/墨镜/口罩)可以和 [[../concepts/symbolism/prop-symbolism]] 的"身份道具"合并讨论——它们的功能高度重叠。
+- 【你的推断】遮挡类服饰(手套/墨镜/口罩)可以和 [道具象征通则](../concepts/symbolism/prop-symbolism.md) 的"身份道具"合并讨论——它们的功能高度重叠。
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 整合 p.60 的穿着与性格素材建立初版。

@@ -145,10 +145,11 @@ updated: 2026-04-06
 - 如果你是评委,你会给自己的故事打几分?扣分扣在哪里?
 
 ## Links & relations
-- [[./five-event-outline]] 五事件大纲:编讲故事的内容基础
-- [[./contrast-engine-method]] 反差发动机:故事核设计
-- [[../concepts/dialogue/dialogue-six-techniques]] 六种台词技巧:面试中台词的质量
-- [[../concepts/character/character-trinity]] 可怜/可信/可爱:开场人物的快速设计
+- [五事件大纲法](./five-event-outline.md) 五事件大纲:编讲故事的内容基础
+- [反差发动机法](./contrast-engine-method.md) 反差发动机:故事核设计
+- [六种台词技巧](../concepts/dialogue/dialogue-six-techniques.md) 六种台词技巧:面试中台词的质量
+- [可怜/可信/可爱 三位一体](../concepts/character/character-trinity.md) 可怜/可信/可爱:开场人物的快速设计
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.41-43 建立初版。编讲故事标准 + 故事接龙 + 锐评策略。

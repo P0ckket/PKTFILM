@@ -173,11 +173,11 @@ eg. 一块怀表:
 - **使用就是释放,不使用就是蓄积**。
 
 ## Links & relations
-- [[./animal-symbolism]] 动物意向:意向系统的生物类分支
-- [[../../theory/theme-expression-methods]] 主题表达六法:道具象征是第 6 法(意向传达)的主要工具
-- [[../cinematic-language/visual-language-overview]] 视听语言总表:前景/后景中的道具布置
-- [[../../story-elements/props-library]] 素材库·道具库(待建)
-- [[../../director-notes/exercise-prop-as-engine]] 道具发动机练习卡
+- [动物意向](./animal-symbolism.md) 动物意向:意向系统的生物类分支
+- [主题表达六法](../../theory/theme-expression-methods.md) 主题表达六法:道具象征是第 6 法(意向传达)的主要工具
+- [视听语言总览](../cinematic-language/visual-language-overview.md) 视听语言总表:前景/后景中的道具布置
+- [素材库·道具库](../../story-elements/props-library.md) 素材库·道具库(待建)
+- [道具发动机练习卡](../../director-notes/exercise-prop-as-engine.md) 道具发动机练习卡
 
 ## Debates & limits
 - **道具 ≠ 全部靠设计**。有些杰作的道具来自演员即兴(eg.《教父》开头那只猫是现场抓来的)——过度"设计"会让道具显得僵硬。
@@ -207,4 +207,5 @@ eg. 一块怀表:
 - **数字时代的新道具**(手机、外卖、监控)的意向规律是什么?——原笔记完全没涉及,这是时代空白。
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.1 + p.6 + p.11 + p.12 + p.36 整合建立。按功能分类组织速查表。空白项:情感道具、记忆道具、数字时代道具。

@@ -78,7 +78,7 @@ updated: 2026-04-06
 - **母亲角色缺失的环境**
 - 当核心角色缺失时,家庭的动力学完全改变——其他成员必须**补位**,补位的过程就是冲突的来源
 
-## 六、家庭故事可用的冲突六类(交叉 [[../theory/conflict-six-types]])
+## 六、家庭故事可用的冲突六类(交叉 [冲突六大类型](../theory/conflict-six-types.md))
 | 冲突类型 | 家庭版表现 |
 |---|---|
 | 信息错位 | 父母隐瞒病情 / 子女隐瞒恋情 / 家族秘密 |
@@ -111,11 +111,11 @@ updated: 2026-04-06
 - [ ] 和解/决裂是通过**动作**还是**台词**完成的?(动作更好)
 
 ## Links & relations
-- [[../theory/theme-expression-methods]] 主题表达六法:家庭故事常用"情节"法+"台词"法
-- [[../genre/institutionalized]] 被制度化:家庭群体是被制度化的衍生类型
-- [[../concepts/character/desire-goal-motivation]] 欲望/目标/动机:家庭责任 vs 个人愿望
-- [[./emotion-and-relation-library]] 情感与关系素材库:和解/疏远的具体动作
-- [[../case-studies/bawang-bieji]] 霸王别姬:家庭(梨园)+ 被制度化的混血
+- [主题表达六法](../theory/theme-expression-methods.md) 主题表达六法:家庭故事常用"情节"法+"台词"法
+- [被制度化](../genre/institutionalized.md) 被制度化:家庭群体是被制度化的衍生类型
+- [欲望/目标/动机](../concepts/character/desire-goal-motivation.md) 欲望/目标/动机:家庭责任 vs 个人愿望
+- [情感与关系素材库](./emotion-and-relation-library.md) 情感与关系素材库:和解/疏远的具体动作
+- [《霸王别姬》](../case-studies/bawang-bieji.md) 霸王别姬:家庭(梨园)+ 被制度化的混血
 
 ## Debates & limits
 - **"家庭题材"不等于"温情"**。原笔记 p.10 的冲突设置(厌烦婚姻/出轨/经济压力)完全可以写成家庭惊悚或犯罪(如《消失的爱人》《寄生虫》)——关键看"冲突走多远"。
@@ -123,4 +123,5 @@ updated: 2026-04-06
 - 【你的推断】原笔记对"非常规家庭结构"只提了一句——但这恰恰是当下影视市场的热点(单亲/离异/重组/同性/跨代抚养)。未来可单独补充。
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 整合 p.4, p.10, p.11 的家庭冲突素材建立初版。含《饮食男女》拆解。

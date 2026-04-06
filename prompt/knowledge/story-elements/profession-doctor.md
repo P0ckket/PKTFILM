@@ -135,18 +135,18 @@ updated: 2026-04-06
 - [ ] 医生本人的**职业病**有没有被写进去?(自身也是患者)
 
 ### 医生 × 被制度化
-医院是典型的**被制度化集体**——规则严格、等级分明、新人入场(实习生)、关键人物(主任)。可以直接对接 [[../genre/institutionalized]] 的模板:
+医院是典型的**被制度化集体**——规则严格、等级分明、新人入场(实习生)、关键人物(主任)。可以直接对接 [被制度化](../genre/institutionalized.md) 的模板:
 - **集体**:医院/科室
 - **外来者**:实习医生/转科医生
 - **关键人物**:科室主任/资深护士
 - **集体表征**:白大褂、值班制度、交接班仪式、暗号系统
 
 ## Links & relations
-- [[./character-design-library]] 人物设计素材:医生作为英雄人物
-- [[../genre/institutionalized]] 被制度化:医院作为"有规则的集体"
-- [[../genre/rites-of-passage]] 变迁仪式:患者的故事
-- [[../concepts/character/character-trinity]] 可怜/可信/可爱:医生的三维度特别容易写
-- [[./family-conflict-library]] 家庭冲突:家属困境的延伸
+- [人物设计素材库](./character-design-library.md) 人物设计素材:医生作为英雄人物
+- [被制度化](../genre/institutionalized.md) 被制度化:医院作为"有规则的集体"
+- [变迁仪式](../genre/rites-of-passage.md) 变迁仪式:患者的故事
+- [可怜/可信/可爱 三位一体](../concepts/character/character-trinity.md) 可怜/可信/可爱:医生的三维度特别容易写
+- [家庭冲突素材库](./family-conflict-library.md) 家庭冲突:家属困境的延伸
 
 ## Debates & limits
 - **原笔记的医生素材偏向"细节积累"**而不是"故事结构"——它更像是编剧的田野调查笔记,而不是完整的医疗剧模板。
@@ -154,4 +154,5 @@ updated: 2026-04-06
 - 【你的推断】中国近年影视对"医疗题材"的需求很高(《中国医生》《关于唐医生的一切》)——这些素材对校考面试的"行业分析"也有用。
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 整合 p.50-52 的医生职业素材建立初版。

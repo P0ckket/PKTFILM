@@ -31,10 +31,10 @@ updated: 2026-04-06
 
 | 类型 | 英文 | 核心两难 | 独立笔记 |
 |---|---|---|---|
-| 伙伴之情 | Buddy Love | 社交关系 vs 自我秉性 | [[../genre/buddy-love]] |
-| 麻烦家伙 | Dude with a Problem | 逃避 vs 克服内心恐惧、面对现实 | [[../genre/dude-with-a-problem]] |
-| 变迁仪式 | Rites of Passage | 接受现实 vs 逃避/自我欺骗 | [[../genre/rites-of-passage]] |
-| 被制度化 | Institutionalized | 两种群体的思想观念的选择 | [[../genre/institutionalized]] |
+| 伙伴之情 | Buddy Love | 社交关系 vs 自我秉性 | [伙伴之情](../genre/buddy-love.md) |
+| 麻烦家伙 | Dude with a Problem | 逃避 vs 克服内心恐惧、面对现实 | [麻烦家伙](../genre/dude-with-a-problem.md) |
+| 变迁仪式 | Rites of Passage | 接受现实 vs 逃避/自我欺骗 | [变迁仪式](../genre/rites-of-passage.md) |
+| 被制度化 | Institutionalized | 两种群体的思想观念的选择 | [被制度化](../genre/institutionalized.md) |
 | 金羊毛 | Golden Fleece | 外在目标 vs 内在目标 | (待建) |
 | 愚者成功 | Fool Triumphant | 安于现状 vs 克服万难争取 | (待建) |
 
@@ -100,12 +100,12 @@ updated: 2026-04-06
 4. 再走五事件大纲
 
 ## Links & relations
-- [[./three-act-structure]] 三幕剧:类型叙事是三幕剧内部的"剧情染色"
-- [[./fifteen-beat-sheet]] 十五节拍:每种类型都走十五节拍,但"节拍内容"不同
-- [[./conflict-six-types]] 冲突六大类型:类型叙事的冲突底层
-- [[./theme-expression-methods]] 主题表达六法:类型→两难→主题的最后一棒
-- [[../genre/buddy-love]] / [[../genre/dude-with-a-problem]] / [[../genre/rites-of-passage]] / [[../genre/institutionalized]]:5 个类型的独立卡
-- [[../comparison/buddy-love-vs-institutionalized]] 两种"关系型故事"的对比
+- [三幕剧结构](./three-act-structure.md) 三幕剧:类型叙事是三幕剧内部的"剧情染色"
+- [十五节拍表](./fifteen-beat-sheet.md) 十五节拍:每种类型都走十五节拍,但"节拍内容"不同
+- [冲突六大类型](./conflict-six-types.md) 冲突六大类型:类型叙事的冲突底层
+- [主题表达六法](./theme-expression-methods.md) 主题表达六法:类型→两难→主题的最后一棒
+- [伙伴之情](../genre/buddy-love.md) / [麻烦家伙](../genre/dude-with-a-problem.md) / [变迁仪式](../genre/rites-of-passage.md) / [被制度化](../genre/institutionalized.md):5 个类型的独立卡
+- [伙伴之情 vs 被制度化](../comparison/buddy-love-vs-institutionalized.md) 两种"关系型故事"的对比
 
 ## Debates & limits
 - **10 类不是铁律**。【学界常见解释】Snyder 的 10 分法并不是类型学界公认的分类法;Rick Altman(《Film/Genre》,1999)基于语义/句法两层的分类法更常被学术引用。Snyder 的 10 类更多是**编剧实务工具**,不是类型理论。
@@ -135,4 +135,5 @@ updated: 2026-04-06
 - 另外 5 类(Whydunit, Monster in the House, Out of the Bottle, Superhero, Golden Fleece 的详细版)需要后续材料补充。
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.20-28 建立初版类型叙事总览。本库目前收录 5 种类型的独立卡,其余 5 类待补。

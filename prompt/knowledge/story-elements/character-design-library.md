@@ -16,7 +16,7 @@ updated: 2026-04-06
 # 人物设计素材库(主角身份清单)
 
 ## TL;DR
-这是一张**编讲故事用的主角身份速查表**——原笔记 p.1, p.11, p.14, p.18-19, p.33-34 反复出现的"怎么设计一个让观众立刻站在他一边的主角"素材。核心框架是 [[../concepts/character/character-trinity]] 的 **可怜+可信+可爱** 三维度,配合四大主角类型(**底层 / 英雄 / 女性 / 儿童**)的具体困境清单。艺考编讲故事 2000 字开场,主角身份设计 30 秒就要让老师认定"这个人值得看"——本卡给的是可直接挑的积木。
+这是一张**编讲故事用的主角身份速查表**——原笔记 p.1, p.11, p.14, p.18-19, p.33-34 反复出现的"怎么设计一个让观众立刻站在他一边的主角"素材。核心框架是 [可怜/可信/可爱 三位一体](../concepts/character/character-trinity.md) 的 **可怜+可信+可爱** 三维度,配合四大主角类型(**底层 / 英雄 / 女性 / 儿童**)的具体困境清单。艺考编讲故事 2000 字开场,主角身份设计 30 秒就要让老师认定"这个人值得看"——本卡给的是可直接挑的积木。
 
 ## 主角三维度的表现方式清单
 
@@ -44,7 +44,7 @@ updated: 2026-04-06
 | 外形层面 | 帅、漂亮、有气质 | — |
 | 技能层面 | 观察和推理(照片细节/袜子/记忆力)、嗅觉灵敏(说出香水品牌)、预测他人行为、揭露谎言、敏锐听力 | 神探夏洛克 |
 
-**排序**:**可爱 > 可信 > 可怜**——看 [[../concepts/character/character-trinity]] 的优先级讨论。
+**排序**:**可爱 > 可信 > 可怜**——看 [可怜/可信/可爱 三位一体](../concepts/character/character-trinity.md) 的优先级讨论。
 
 ## 四大主角类型库
 
@@ -158,13 +158,13 @@ updated: 2026-04-06
 → 30 秒内三维度齐全。
 
 ## Links & relations
-- [[../concepts/character/character-trinity]] 可怜/可信/可爱三位一体:这张素材库的理论基础
-- [[../concepts/character/save-the-cat-moment]] 救猫咪时刻:可爱身份的具体技法
-- [[../concepts/character/desire-goal-motivation]] 欲望/目标/动机:主角身份 + 欲望的完整配置
-- [[../concepts/character/character-arc-mechanism]] 人物弧光:缺点→困境→欲望→目标
-- [[./antagonist-and-flaws-library]] 反派+缺陷素材库
-- [[./profession-doctor]] 医生职业素材库
-- [[./profession-police]] 警察职业素材库
+- [可怜/可信/可爱 三位一体](../concepts/character/character-trinity.md) 可怜/可信/可爱三位一体:这张素材库的理论基础
+- [救猫咪时刻](../concepts/character/save-the-cat-moment.md) 救猫咪时刻:可爱身份的具体技法
+- [欲望/目标/动机](../concepts/character/desire-goal-motivation.md) 欲望/目标/动机:主角身份 + 欲望的完整配置
+- [人物弧光机制](../concepts/character/character-arc-mechanism.md) 人物弧光:缺点→困境→欲望→目标
+- [反派与缺陷素材库](./antagonist-and-flaws-library.md) 反派+缺陷素材库
+- [医生职业素材库](./profession-doctor.md) 医生职业素材库
+- [警察职业素材库](./profession-police.md) 警察职业素材库
 
 ## Debates & limits
 - **"四大类型"不是互斥**。《哪吒》的女主既是女性也是儿童,《触不可及》的主角既是底层也是残疾。类型是**视角切入点**,不是**标签**。
@@ -172,4 +172,5 @@ updated: 2026-04-06
 - 【你的推断】英雄人物反而是最难写的——因为写不好就变成"工具人",必须花额外字数写"代价"才能立住。艺考初学者慎选。
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 整合 p.1, p.11, p.14, p.18-19, p.33-34, p.45 的人物设计素材建立初版。

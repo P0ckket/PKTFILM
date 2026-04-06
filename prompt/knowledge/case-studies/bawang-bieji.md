@@ -126,10 +126,10 @@ updated: 2026-04-06
 **【我的理解】**:这个光谱揭示了《霸王别姬》的真正主题——**忠诚的代价是毁灭,妥协的代价是丧失意义**。没有人赢。
 
 ## Links & relations
-- [[../genre/institutionalized]] 被制度化:《霸王别姬》是被制度化的中国版
-- [[../genre/rites-of-passage]] 变迁仪式:蝶衣的身份认同线
-- [[../theory/theme-expression-methods]] 主题表达六法:戏中戏 = "情节中表现" + "台词中表现"
-- [[../concepts/cinematic-language/visual-language-overview]] 视听语言:顾长卫的摄影
+- [被制度化](../genre/institutionalized.md) 被制度化:《霸王别姬》是被制度化的中国版
+- [变迁仪式](../genre/rites-of-passage.md) 变迁仪式:蝶衣的身份认同线
+- [主题表达六法](../theory/theme-expression-methods.md) 主题表达六法:戏中戏 = "情节中表现" + "台词中表现"
+- [视听语言总览](../concepts/cinematic-language/visual-language-overview.md) 视听语言:顾长卫的摄影
 
 ## Open questions
 - **"戏中戏"结构**是否可以独立成一个概念卡?(适用范围超出《霸王别姬》)
@@ -137,4 +137,5 @@ updated: 2026-04-06
 - 原笔记没有拆解《霸王别姬》的**节拍**——可以用十五节拍表做一次完整对照
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.31 建立初版。五人物 + 二次分析(被制度化/变迁仪式)。

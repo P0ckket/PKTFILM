@@ -105,12 +105,12 @@ updated: 2026-04-06
 - **想写关系成长** → 选 C 责任型
 
 ## Links & relations
-- [[./character-trinity]] 三位一体:弧光的"起点人物"必须先用三位一体立住
-- [[./desire-goal-motivation]] 欲望/目标/动机:弧光链条中"欲望 → 目标"的细化
-- [[../../theory/three-act-structure]] 三幕剧:弧光的时间分布(缺点在幕 1、修正在幕 2-3)
-- [[../../theory/fifteen-beat-sheet]] 十五节拍表:灵魂黑夜是弧光的转折点
-- [[../../case-studies/baiyuan-no-koi]] 《百元之恋》详细弧光拆解
-- [[../../director-notes/exercise-character-arc]] 弧光练习卡
+- [可怜/可信/可爱 三位一体](./character-trinity.md) 三位一体:弧光的"起点人物"必须先用三位一体立住
+- [欲望/目标/动机](./desire-goal-motivation.md) 欲望/目标/动机:弧光链条中"欲望 → 目标"的细化
+- [三幕剧结构](../../theory/three-act-structure.md) 三幕剧:弧光的时间分布(缺点在幕 1、修正在幕 2-3)
+- [十五节拍表](../../theory/fifteen-beat-sheet.md) 十五节拍表:灵魂黑夜是弧光的转折点
+- [《百元之恋》](../../case-studies/baiyuan-no-koi.md) 《百元之恋》详细弧光拆解
+- [弧光练习卡](../../director-notes/exercise-character-arc.md) 弧光练习卡
 
 ## Debates & limits
 - **"缺点必须修正"是商业片公式**。【学界常见解释】Robert McKee 在 *Story* 里强调 "character transformation",但也承认有 "character revelation"(主角从头到尾不变,但观众对他的理解改变)的杰作(eg.《唐人街》的 Jake)。p.48 的链条更偏 transformation 这一路。
@@ -141,4 +141,5 @@ updated: 2026-04-06
 - **弧光曲线的具体形状**(线性 / 阶梯 / U 形)——p.48 只给了"起点 → 终点"的单向链,但真实故事里弧光往往有反复(主角以为自己变了,结果又犯错),这种"S 形弧光"是否需要单独处理?
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.48-49 建立初版。含《百元之恋》的具体拆解和三种弧光启动方式。

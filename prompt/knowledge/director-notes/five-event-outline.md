@@ -132,11 +132,12 @@ updated: 2026-04-06
 - **故事接龙**(北电三试)→ 找到前面同学的主角,反转人物关系(p.42)
 
 ## Links & relations
-- [[../theory/three-act-structure]] 三幕剧:五事件 = 三幕剧的具象化
-- [[../theory/fifteen-beat-sheet]] 十五节拍:五事件是十五节拍的"艺考精简版"
-- [[../concepts/character/character-arc-mechanism]] 人物弧光:缺陷→困境→目标→弧光
-- [[../concepts/character/character-trinity]] 可怜/可信/可爱:开场事件的人物设计
-- [[./exam-interview-strategy]] 艺考面试策略(待建)
+- [三幕剧结构](../theory/three-act-structure.md) 三幕剧:五事件 = 三幕剧的具象化
+- [十五节拍表](../theory/fifteen-beat-sheet.md) 十五节拍:五事件是十五节拍的"艺考精简版"
+- [人物弧光机制](../concepts/character/character-arc-mechanism.md) 人物弧光:缺陷→困境→目标→弧光
+- [可怜/可信/可爱 三位一体](../concepts/character/character-trinity.md) 可怜/可信/可爱:开场事件的人物设计
+- [艺考面试策略](./exam-interview-strategy.md) 艺考面试策略(待建)
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.41 + p.43 建立初版。五事件 × 弧光对应表 + 反模式 + 练习。

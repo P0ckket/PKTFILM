@@ -28,7 +28,7 @@ updated: 2026-04-06
 
 **结构特点**：丈夫线是"悬疑"——观众跟着丈夫找答案；妻子线是"揭秘"——观众发现自己被骗了。两线交替 = **信息错位**的极致运用。
 
-### 对应 [[../theory/conflict-six-types]]
+### 对应 [冲突六大类型](../theory/conflict-six-types.md)
 - **信息错位**：观众以为丈夫是凶手 → 真相反转
 - **力量失衡**：艾米的智力碾压所有人
 
@@ -52,7 +52,7 @@ updated: 2026-04-06
 - **家庭责任与个人愿望的冲突**
 - **经济压力**
 
-→ 这四条直接进入了 [[../story-elements/family-conflict-library]]。
+→ 这四条直接进入了 [家庭冲突素材库](../story-elements/family-conflict-library.md)。
 
 ## 惊悚片元素库（以本片为锚点展开）
 
@@ -65,7 +65,7 @@ updated: 2026-04-06
 ### 困难升级方式（p.10）
 - 接连曝出不利新闻、物理障碍增加、时间限制压迫、信息泄露
 
-→ 这些素材已整合到 [[../genre/thriller-elements]] 和 [[../story-elements/suspense-and-conflict-library]]。
+→ 这些素材已整合到 [惊悚片要素](../genre/thriller-elements.md) 和 [悬念与冲突素材库](../story-elements/suspense-and-conflict-library.md)。
 
 ## 类型学分析
 
@@ -85,12 +85,13 @@ updated: 2026-04-06
 | 血迹 | 悬念 → 看似犯罪现场 |
 
 ## Links & relations
-- [[../genre/thriller-elements]] 惊悚片要素：本片作为核心案例
-- [[../story-elements/family-conflict-library]] 家庭冲突素材：本片的冲突模板
-- [[../theory/conflict-six-types]] 冲突六类：信息错位的极致
-- [[../concepts/narrative/contrast-three-layers]] 反差三层：艾米的三层反差
-- [[../story-elements/suspense-and-conflict-library]] 悬念与冲突素材
-- [[./bawang-bieji]] 霸王别姬：另一种"被制度化"的极致
+- [惊悚片要素](../genre/thriller-elements.md) 惊悚片要素：本片作为核心案例
+- [家庭冲突素材库](../story-elements/family-conflict-library.md) 家庭冲突素材：本片的冲突模板
+- [冲突六大类型](../theory/conflict-six-types.md) 冲突六类：信息错位的极致
+- [反差三层](../concepts/narrative/contrast-three-layers.md) 反差三层：艾米的三层反差
+- [悬念与冲突素材库](../story-elements/suspense-and-conflict-library.md) 悬念与冲突素材
+- [《霸王别姬》](./bawang-bieji.md) 霸王别姬：另一种"被制度化"的极致
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.10-11 建立初版。双线叙事 + 艾米反差 + 类型学分析。

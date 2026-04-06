@@ -136,12 +136,12 @@ updated: 2026-04-06
 - → 三合一后产生**叠加效应**,远胜于单一元素。
 
 ## Links & relations
-- [[../../theory/story-core-and-contrast]] 故事核:视听语言是场面张力的载体
-- [[../narrative/contrast-three-layers]] 张力三层:场面张力的技术实现
-- [[../symbolism/animal-symbolism]] 动物意向:意向层的视听表达
-- [[../symbolism/prop-symbolism]] 道具象征:物件层的视听表达
-- [[../../case-studies/bawang-bieji]] 《霸王别姬》:视听语言综合案例
-- [[../../director-notes/film-analysis-template]] 影评分析模板(待建)
+- [故事核与人物反差](../../theory/story-core-and-contrast.md) 故事核:视听语言是场面张力的载体
+- [反差三层](../narrative/contrast-three-layers.md) 张力三层:场面张力的技术实现
+- [动物意向](../symbolism/animal-symbolism.md) 动物意向:意向层的视听表达
+- [道具象征通则](../symbolism/prop-symbolism.md) 道具象征:物件层的视听表达
+- [《霸王别姬》](../../case-studies/bawang-bieji.md) 《霸王别姬》:视听语言综合案例
+- [影评分析模板](../../director-notes/film-analysis-template.md) 影评分析模板(待建)
 
 ## Debates & limits
 - **视听语言的"含义"不是固定的**。【学界常见解释】一个色彩/角度的意义严重依赖上下文——黄色在《黄土地》里是中华文明起源,在《辛德勒的名单》里是女孩衣服的唯一亮色(死亡中的生命),在《凯文怎么了》里是焦虑的暗示。本表的"常用含义"只是**基础映射**,不能机械套用。
@@ -172,4 +172,5 @@ updated: 2026-04-06
 - **色彩双义性的处理**——绿色既是"生命和平希望"又是"恐怖残忍",黑色有三种不同含义。考场上如何判断该用哪种?需要练习卡。
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.25-27 + p.35 整合建立七大类总表。空白项显著,待后续艺考视听语言教材补充。

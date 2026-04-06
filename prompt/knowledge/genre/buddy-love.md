@@ -128,12 +128,12 @@ updated: 2026-04-06
 - [ ] 主题是否从两人的碰撞里浮出?
 
 ## Links & relations
-- [[../theory/genre-narratives-overview]] 类型叙事总览:伙伴之情是 10 类之一
-- [[../theory/conflict-six-types]] 冲突六类:伙伴之情主要对应"信息错位"
-- [[./institutionalized]] 被制度化:关系型 vs 群体型的对比
-- [[../comparison/buddy-love-vs-institutionalized]] 两种"关系型故事"的对比
-- [[../concepts/character/character-arc-mechanism]] 人物弧光:伙伴之情是"双弧光"
-- [[../theory/theme-expression-methods]] 主题表达六法:伙伴之情主要靠"人物性格"法表达主题
+- [类型叙事总览](../theory/genre-narratives-overview.md) 类型叙事总览:伙伴之情是 10 类之一
+- [冲突六大类型](../theory/conflict-six-types.md) 冲突六类:伙伴之情主要对应"信息错位"
+- [被制度化](./institutionalized.md) 被制度化:关系型 vs 群体型的对比
+- [伙伴之情 vs 被制度化](../comparison/buddy-love-vs-institutionalized.md) 两种"关系型故事"的对比
+- [人物弧光机制](../concepts/character/character-arc-mechanism.md) 人物弧光:伙伴之情是"双弧光"
+- [主题表达六法](../theory/theme-expression-methods.md) 主题表达六法:伙伴之情主要靠"人物性格"法表达主题
 
 ## Debates & limits
 - **"必须分离再结合"的规律性**。【学界常见解释】这是好莱坞模板,但独立电影里不一定遵守——《爱在午夜降临前》里两人几乎全程在一起,"分离"只是争吵。
@@ -163,4 +163,5 @@ updated: 2026-04-06
 - **三人伙伴**(《三傻大闹宝莱坞》)是否仍属伙伴之情?还是一个独立子类?
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.20-21 建立初版。三元素、四段式、六种关系类型、六种衍生类型均已整理。

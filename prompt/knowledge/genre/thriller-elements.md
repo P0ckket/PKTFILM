@@ -68,7 +68,7 @@ updated: 2026-04-06
 ### 五、让观众紧张的词汇(p.13)
 (原笔记在此中断,具体词汇未列出——待后续补充)
 
-### 六、紧张道具(p.1,与 [[../concepts/symbolism/prop-symbolism]] 重叠)
+### 六、紧张道具(p.1,与 [道具象征通则](../concepts/symbolism/prop-symbolism.md) 重叠)
 - 钉子
 - 硫酸
 - 炸弹 + 计时器
@@ -187,12 +187,12 @@ updated: 2026-04-06
 - 结局 400 字:揭露真相 + 象征道具回扣
 
 ## Links & relations
-- [[./dude-with-a-problem]] 麻烦家伙:惊悚片的母类型
-- [[../theory/conflict-six-types]] 冲突六类:惊悚片对应"未知的深渊"
-- [[../concepts/symbolism/prop-symbolism]] 道具象征:紧张道具 + 悬念道具的详细讨论
-- [[../concepts/cinematic-language/visual-language-overview]] 视听语言:惊悚片对音响和灯光高度依赖
-- [[../case-studies/gone-girl]] 《消失的爱人》专题(待建)
-- [[../story-elements/suspense-devices]] 悬念装置素材库(待建)
+- [麻烦家伙](./dude-with-a-problem.md) 麻烦家伙:惊悚片的母类型
+- [冲突六大类型](../theory/conflict-six-types.md) 冲突六类:惊悚片对应"未知的深渊"
+- [道具象征通则](../concepts/symbolism/prop-symbolism.md) 道具象征:紧张道具 + 悬念道具的详细讨论
+- [视听语言总览](../concepts/cinematic-language/visual-language-overview.md) 视听语言:惊悚片对音响和灯光高度依赖
+- [《消失的爱人》](../case-studies/gone-girl.md) 《消失的爱人》专题(待建)
+- [悬念装置素材库](../story-elements/suspense-devices.md) 悬念装置素材库(待建)
 
 ## Debates & limits
 - **原笔记条目不系统**。p.10-13 的条目明显是"看到什么记什么",没有完整的类型理论——只能作为**素材库**使用,不能替代类型分析。
@@ -227,4 +227,5 @@ updated: 2026-04-06
 - **"艾米式反差"**是否可独立成一个概念卡?它的适用范围超出惊悚片
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.10-13 整合建立。16 类元素 + 《消失的爱人》案例。大量空白待补。

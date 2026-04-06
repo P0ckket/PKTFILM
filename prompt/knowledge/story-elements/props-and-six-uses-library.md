@@ -237,11 +237,11 @@ updated: 2026-04-06
 - [ ] 道具是不是只服务于情节,而忽略了人物?
 
 ## Links & relations
-- [[../concepts/symbolism/prop-symbolism]] 道具象征理论:紧张/悬念/意向/身份/仪式/转变六类
-- [[../concepts/symbolism/animal-symbolism]] 动物意向:道具的生物版
-- [[./scene-and-setting-library]] 场景素材库
-- [[../concepts/narrative/contrast-three-layers]] 反差三层:道具参与场面张力
-- [[../director-notes/prop-to-scene-method]] 道具生场景法(待建)
+- [道具象征通则](../concepts/symbolism/prop-symbolism.md) 道具象征理论:紧张/悬念/意向/身份/仪式/转变六类
+- [动物意向](../concepts/symbolism/animal-symbolism.md) 动物意向:道具的生物版
+- [场景与环境素材库](./scene-and-setting-library.md) 场景素材库
+- [反差三层](../concepts/narrative/contrast-three-layers.md) 反差三层:道具参与场面张力
+- [道具生场景法](../director-notes/prop-to-scene-method.md) 道具生场景法(待建)
 
 ## Debates & limits
 - **道具不能滥用**。一个故事里有 2-3 个有记忆点的道具就够了,7-8 个只会让观众记不住。选"最能承载主题"的那 1-2 个主道具。
@@ -255,4 +255,5 @@ updated: 2026-04-06
 - **道具与人物的"物我合一"**(主角性格通过道具外显)——这是否是更高级的道具使用?
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 整合 p.10, p.11, p.44-47, p.53-73 的道具素材建立初版。八种用法 + 按类型反向索引。

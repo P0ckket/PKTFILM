@@ -96,12 +96,12 @@ updated: 2026-04-06
 - [ ] 过关后,某样东西(生命/家人/尊严)得以继续存在?
 
 ## Links & relations
-- [[../theory/genre-narratives-overview]] 类型叙事总览:麻烦家伙是 10 类之一
-- [[../theory/conflict-six-types]] 冲突六类:麻烦家伙对应"力量失衡"
-- [[./thriller-elements]] 惊悚片要素:麻烦家伙的具体技法
-- [[../concepts/character/character-trinity]] 三位一体:"普通"其实就是"可怜 + 可爱 + 可信"的极致平衡
-- [[../comparison/buddy-love-vs-institutionalized]] 伙伴之情 vs 被制度化(麻烦家伙作为第三极)
-- [[../theory/theme-expression-methods]] 主题表达六法:麻烦家伙常用"情节"法和"意向"法
+- [类型叙事总览](../theory/genre-narratives-overview.md) 类型叙事总览:麻烦家伙是 10 类之一
+- [冲突六大类型](../theory/conflict-six-types.md) 冲突六类:麻烦家伙对应"力量失衡"
+- [惊悚片要素](./thriller-elements.md) 惊悚片要素:麻烦家伙的具体技法
+- [可怜/可信/可爱 三位一体](../concepts/character/character-trinity.md) 三位一体:"普通"其实就是"可怜 + 可爱 + 可信"的极致平衡
+- [伙伴之情 vs 被制度化](../comparison/buddy-love-vs-institutionalized.md) 伙伴之情 vs 被制度化(麻烦家伙作为第三极)
+- [主题表达六法](../theory/theme-expression-methods.md) 主题表达六法:麻烦家伙常用"情节"法和"意向"法
 
 ## Debates & limits
 - **"越普通越好"的极限**。主角不能普通到"没有任何个性"——他必须有**一个让人记住的标签**(洁癖、结巴、胆小)。纯素人会让观众失去抓手。
@@ -131,4 +131,5 @@ updated: 2026-04-06
 - **"无辜"与"灰色主角"的边界**:麻烦家伙能否是**有道德瑕疵的主角**?(如《老无所依》里的卢埃林)
 
 ## Changelog
+- **2026-04-06 v1.1** — 将 [[wiki-link]] 替换为标准 Markdown 相对链接
 - **2026-04-06 v1.0** — 基于 p.21 + p.28 建立初版。三元素、核心公式、三种衍生类型、两难已整理。
