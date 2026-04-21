@@ -17,7 +17,7 @@ updated: 2026-04-21
 
 > 这是 E:/director 知识库的**唯一入口地图**。按"问题"而非"人物"组织。
 >
-> **当前版本**：v1.2（新增视听语言扩展卡 + 声音设计 + 形式主义/现实主义比较 + 分析方法论，共 **51 篇笔记**）
+> **当前版本**：v1.3（新增分镜工作流/画幅比例/构图法则/世界电影参考索引；扩展景别与运镜，共 **56 篇笔记**）
 > **下一步**：等待用户提供其他 PDF，走 ingest 工作流做增量扩展。
 
 ## 一、这个知识库想回答什么？
@@ -58,10 +58,12 @@ updated: 2026-04-21
 - [场面调度与走位（180°轴线规则/空间关系/权力表达）](../concepts/cinematic-language/blocking-mise-en-scene.md)
 
 #### 视听语言（expanded）
-- [景别类型（大远景→大特写/POV/跳切/淡入淡出）](../concepts/cinematic-language/shot-types.md)
+- [景别类型（大远景→大特写/OTS/美式镜头/意式特写/POV/跳切）](../concepts/cinematic-language/shot-types.md)
 - [摄影机角度（平视/俯视/仰视/荷兰角/鸟瞰）](../concepts/cinematic-language/camera-angles.md)
-- [摄影机运动（摇/推轨/升降/手持/斯坦尼康）](../concepts/cinematic-language/camera-movement.md)
+- [摄影机运动（摇/推轨/升降/手持/斯坦尼康/31种运镜速查）](../concepts/cinematic-language/camera-movement.md)
 - [灯光技术（硬光/软光/三点布光/高调/低调/逆光）](../concepts/cinematic-language/lighting-techniques.md)
+- [画幅比例（1.33:1学院比例→2.76:1 Ultra Panavision/变形镜头）](../concepts/cinematic-language/aspect-ratios.md)
+- [构图法则（15种核心构图/情绪速查/13种色调系统）](../concepts/cinematic-language/composition-styles.md)
 
 #### 声音（sound）
 - [声音设计（画内音/画外音/拟音/音乐/沉默）](../concepts/sound/sound-design.md)
@@ -97,6 +99,7 @@ updated: 2026-04-21
 - [反差发动机法（故事核设计）](../director-notes/contrast-engine-method.md)
 - [道具生场景法（命题作文应对）](../director-notes/prop-to-scene-method.md)
 - [艺考面试策略（编讲故事+锐评+故事接龙）](../director-notes/exam-interview-strategy.md)
+- [分镜头工作流（Storyboarder三步法/animatic/景别代码约定）](../director-notes/storyboard-workflow.md)
 
 ### 专题影片分析（case-studies）
 - [《霸王别姬》忠诚主题 + 五人物光谱](../case-studies/bawang-bieji.md)
@@ -112,6 +115,7 @@ updated: 2026-04-21
 - [本文件（MOC）](./moc.md)
 - [影片案例索引](./film-case-index.md)
 - [术语表（中英对照）](./term-glossary.md)
+- [世界电影摄影风格速查（67部真人+动画/按时代组织）](./world-cinema-reference.md)
 
 ## 三、笔记状态约定
 
@@ -128,21 +132,22 @@ updated: 2026-04-21
 - 优化旧笔记时走 `prompt/prompts/omega-film-prompt.md` 优化器
 - 任何写盘都必须附 Changelog，不得静默覆盖
 
-## 五、v1.2 统计
+## 五、v1.3 统计
 
 | 层 | 文件数 |
 |---|---|
 | theory/ | 7 |
-| concepts/ | 16 |
+| concepts/ | 19 |
 | genre/ | 5 |
 | story-elements/ | 10 |
-| director-notes/ | 4 |
+| director-notes/ | 5 |
 | comparison/ | 3 |
 | case-studies/ | 3 |
-| index/ | 3 |
-| **合计** | **51 个入口（含 index）** |
+| index/ | 4 |
+| **合计** | **56 个入口（含 index）** |
 
 ## Changelog
+- **2026-04-21 v1.3** — 基于 wonderunit/storyboarder + NickPittas/DirectorsConsole 新增分镜工作流（director-notes/storyboard-workflow.md）/ 画幅比例（concepts/cinematic-language/aspect-ratios.md）/ 构图法则（concepts/cinematic-language/composition-styles.md）/ 世界电影参考索引（index/world-cinema-reference.md）；扩展景别（新增 OTS/美式镜头/意式特写 v1.2）与运镜（新增 14 种设备清单 + 31 种运镜速查 + Dolly Zoom 注解 v1.2）。concepts/ +3（现为 19），director-notes/ +1（现为 5），index/ +1（现为 4），合计 56。
 - **2026-04-21 v1.2** — 新增 8 篇视听语言扩展笔记：景别/角度/运镜/灯光/声音设计/场面调度（concepts/cinematic-language/ + concepts/sound/）；新增比较卡"形式主义 vs. 现实主义"；新增理论卡"电影分析方法论"。MOC 新增"视听语言（expanded）"与"声音（sound）"子节。
 - **2026-04-06 v1.1** — 所有 [[wiki-link]] 改为标准 Markdown 相对链接，兼容 VSCode 原生预览与 GitHub 渲染。
 - **2026-04-06 v1.0** — 基于 故事元素积累6_merged.pdf 的 73 页全量内容建立完整 MOC。36 篇笔记 + 3 索引全部实际创建完毕。
