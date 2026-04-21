@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PKTFILM 电影学习知识库</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #252836;
+    --border: #2e3347;
+    --text: #e2e8f0;
+    --text-muted: #8892a4;
+    --text-dim: #5a6478;
+    --theory: #6c8eff;
+    --concepts: #4ade80;
+    --genre: #2dd4bf;
+    --story-elements: #c084fc;
+    --director-notes: #fb923c;
+    --comparison: #fbbf24;
+    --case-studies: #f87171;
+    --index: #94a3b8;
+    --stable: #4ade80;
+    --draft: #fbbf24;
+    --seed: #94a3b8;
+    --radius: 10px;
+    --radius-sm: 6px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0f1117 0%, #1a1d27 40%, #111827 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 60px 40px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 60% 40%, rgba(108,142,255,0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 30% 70%, rgba(74,222,128,0.05) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+  }
+  .hero-sub {
+    font-size: 15px;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 32px;
+  }
+  .hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+  .hero-meta span { display: flex; align-items: center; gap: 6px; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--theory); flex-shrink: 0; }
+
+  /* STATS BAR */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    padding: 24px 40px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  .stat-card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.2s;
+    text-decoration: none;
+    display: block;
+  }
+  .stat-card:hover { transform: translateY(-2px); }
+  .stat-card .stat-count {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .stat-card .stat-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .stat-theory { border-top: 2px solid var(--theory); }
+  .stat-theory .stat-count { color: var(--theory); }
+  .stat-theory:hover { border-color: var(--theory); }
+  .stat-concepts { border-top: 2px solid var(--concepts); }
+  .stat-concepts .stat-count { color: var(--concepts); }
+  .stat-concepts:hover { border-color: var(--concepts); }
+  .stat-genre { border-top: 2px solid var(--genre); }
+  .stat-genre .stat-count { color: var(--genre); }
+  .stat-genre:hover { border-color: var(--genre); }
+  .stat-story { border-top: 2px solid var(--story-elements); }
+  .stat-story .stat-count { color: var(--story-elements); }
+  .stat-story:hover { border-color: var(--story-elements); }
+  .stat-director { border-top: 2px solid var(--director-notes); }
+  .stat-director .stat-count { color: var(--director-notes); }
+  .stat-director:hover { border-color: var(--director-notes); }
+  .stat-comparison { border-top: 2px solid var(--comparison); }
+  .stat-comparison .stat-count { color: var(--comparison); }
+  .stat-comparison:hover { border-color: var(--comparison); }
+  .stat-cases { border-top: 2px solid var(--case-studies); }
+  .stat-cases .stat-count { color: var(--case-studies); }
+  .stat-cases:hover { border-color: var(--case-studies); }
+  .stat-index { border-top: 2px solid var(--index); }
+  .stat-index .stat-count { color: var(--index); }
+  .stat-index:hover { border-color: var(--index); }
+
+  /* QUICK NAV */
+  .quick-nav {
+    padding: 20px 40px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  .quick-nav-label {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 4px;
+    white-space: nowrap;
+  }
+  .nav-pill {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    transition: all 0.2s;
+    background: var(--surface);
+  }
+  .nav-pill:hover { background: var(--surface2); color: var(--text); }
+  .nav-theory:hover { border-color: var(--theory); color: var(--theory); }
+  .nav-concepts:hover { border-color: var(--concepts); color: var(--concepts); }
+  .nav-genre:hover { border-color: var(--genre); color: var(--genre); }
+  .nav-story:hover { border-color: var(--story-elements); color: var(--story-elements); }
+  .nav-director:hover { border-color: var(--director-notes); color: var(--director-notes); }
+  .nav-comparison:hover { border-color: var(--comparison); color: var(--comparison); }
+  .nav-cases:hover { border-color: var(--case-studies); color: var(--case-studies); }
+  .nav-index:hover { border-color: var(--index); color: var(--index); }
+
+  /* MAIN CONTENT */
+  .main { padding: 0 40px 60px; max-width: 1600px; margin: 0 auto; }
+
+  /* SECTION */
+  .section { padding: 48px 0 24px; }
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-accent {
+    width: 4px;
+    height: 28px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    align-self: center;
+  }
+  .section-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+  .section-header .section-count {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-left: auto;
+  }
+  .section-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: -20px;
+    margin-bottom: 28px;
+    padding-left: 20px;
+  }
+
+  /* CARD GRID */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+  }
+
+  /* CARD */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  }
+
+  .card-theory:hover { border-color: var(--theory); }
+  .card-concepts:hover { border-color: var(--concepts); }
+  .card-genre:hover { border-color: var(--genre); }
+  .card-story:hover { border-color: var(--story-elements); }
+  .card-director:hover { border-color: var(--director-notes); }
+  .card-comparison:hover { border-color: var(--comparison); }
+  .card-cases:hover { border-color: var(--case-studies); }
+  .card-index:hover { border-color: var(--index); }
+
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .card-stripe {
+    width: 3px;
+    min-height: 40px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .card-title-area { flex: 1; min-width: 0; }
+  .card-name {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .card-desc {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .card-tldr {
+    font-size: 12px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    background: var(--surface2);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    border-left: 2px solid var(--border);
+    font-style: italic;
+  }
+  .card-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .badge-stable { background: rgba(74,222,128,0.15); color: var(--stable); border: 1px solid rgba(74,222,128,0.3); }
+  .badge-draft { background: rgba(251,191,36,0.15); color: var(--draft); border: 1px solid rgba(251,191,36,0.3); }
+  .badge-seed { background: rgba(148,163,184,0.15); color: var(--seed); border: 1px solid rgba(148,163,184,0.3); }
+  .type-tag {
+    font-size: 10px;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    padding: 2px 7px;
+    border-radius: 4px;
+  }
+  .tag-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+  .tag-pill {
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    background: var(--surface2);
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+  }
+
+  /* SUB-SECTION for concepts */
+  .sub-section { margin-bottom: 32px; }
+  .sub-section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+    padding-left: 4px;
+    border-left: 2px solid var(--concepts);
+    padding-left: 8px;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 32px 40px;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+  }
+  .footer a { color: var(--text-muted); text-decoration: none; }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero { padding: 40px 20px 32px; }
+    .stats-bar, .quick-nav, .main { padding-left: 20px; padding-right: 20px; }
+    .card-grid { grid-template-columns: 1fr; }
+    .stats-bar { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .stats-bar { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-eyebrow">Film Theory · Directing Practice · Knowledge Base</div>
+  <h1>PKTFILM 电影学习知识库</h1>
+  <p class="hero-sub">基于《故事元素积累6》及多方电影理论来源构建的可持续进化知识库，兼顾电影研究与导演实践</p>
+  <div class="hero-meta">
+    <span><div class="dot" style="background:var(--theory)"></div> 8 大分层</span>
+    <span><div class="dot" style="background:var(--concepts)"></div> 56 条笔记</span>
+    <span><div class="dot" style="background:var(--genre)"></div> 更新于 2026-04-21</span>
+    <span><div class="dot" style="background:var(--story-elements)"></div> 艺考编导专向</span>
+  </div>
+</header>
+
+<!-- STATS BAR -->
+<nav class="stats-bar">
+  <a href="#theory" class="stat-card stat-theory">
+    <div class="stat-count">7</div>
+    <div class="stat-label">理论层</div>
+  </a>
+  <a href="#concepts" class="stat-card stat-concepts">
+    <div class="stat-count">16</div>
+    <div class="stat-label">概念层</div>
+  </a>
+  <a href="#genre" class="stat-card stat-genre">
+    <div class="stat-count">5</div>
+    <div class="stat-label">类型层</div>
+  </a>
+  <a href="#story-elements" class="stat-card stat-story">
+    <div class="stat-count">8</div>
+    <div class="stat-label">素材层</div>
+  </a>
+  <a href="#director-notes" class="stat-card stat-director">
+    <div class="stat-count">5</div>
+    <div class="stat-label">导演笔记</div>
+  </a>
+  <a href="#comparison" class="stat-card stat-comparison">
+    <div class="stat-count">3</div>
+    <div class="stat-label">对比层</div>
+  </a>
+  <a href="#case-studies" class="stat-card stat-cases">
+    <div class="stat-count">3</div>
+    <div class="stat-label">案例层</div>
+  </a>
+  <a href="#index" class="stat-card stat-index">
+    <div class="stat-count">4</div>
+    <div class="stat-label">索引层</div>
+  </a>
+</nav>
+
+<!-- QUICK NAV -->
+<div class="quick-nav">
+  <span class="quick-nav-label">快速跳转</span>
+  <a href="#theory" class="nav-pill nav-theory">理论</a>
+  <a href="#concepts" class="nav-pill nav-concepts">概念</a>
+  <a href="#genre" class="nav-pill nav-genre">类型</a>
+  <a href="#story-elements" class="nav-pill nav-story">素材库</a>
+  <a href="#director-notes" class="nav-pill nav-director">导演笔记</a>
+  <a href="#comparison" class="nav-pill nav-comparison">对比</a>
+  <a href="#case-studies" class="nav-pill nav-cases">案例</a>
+  <a href="#index" class="nav-pill nav-index">索引</a>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- ===== THEORY ===== -->
+  <section class="section" id="theory">
+    <div class="section-header">
+      <div class="section-accent" style="background:var(--theory)"></div>
+      <h2 style="color:var(--theory)">理论层 Theory</h2>
+      <span class="section-count">7 条笔记</span>
+    </div>
+    <p class="section-desc">叙事结构理论、冲突类型、主题表达——电影讲故事的底层逻辑框架</p>
+    <div class="card-grid">
+
+      <div class="card card-theory">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--theory)"></div>
+          <div class="card-title-area">
+            <div class="card-name">三幕剧结构（Three-Act Structure）</div>
+            <div class="card-desc">把故事划分为"开端-对抗-结局"三个段落，以激励事件与情节点为钩子，艺考编讲故事的主结构模板</div>
+          </div>
+        </div>
+        <div class="card-tldr">三幕剧是西方主流剧作法里最基础的"段落比例"规定：故事按 1:2:1 的字数/时长比被切成开端（Setup）、对抗（Confrontation）、结局（Resolution）三段……</div>
+        <div class="card-footer">
+          <span class="badge badge-stable">stable</span>
+          <span class="type-tag">theory</span>
+          <div class="tag-pills">
+            <span class="tag-pill">narrative-structure</span>
+            <span class="tag-pill">three-act</span>
+            <span class="tag-pill">exam</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-theory">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--theory)"></div>
+          <div class="card-title-area">
+            <div class="card-name">十五节拍表（Save the Cat Beat Sheet）</div>
+            <div class="card-desc">Blake Snyder《救猫咪》提出的十五节拍表，在三幕剧骨架上做更细的情节节点切分</div>
+          </div>
+        </div>
+        <div class="card-tldr">十五节拍表（Beat Sheet）是 Blake Snyder 在《救猫咪》里提出的剧作拆解工具，把三幕剧内部再切成 15 个具体节拍（beat）……</div>
+        <div class="card-footer">
+          <span class="badge badge-stable">stable</span>
+          <span class="type-tag">theory</span>
+          <div class="tag-pills">
+            <span class="tag-pill">beat-sheet</span>
+            <span class="tag-pill">save-the-cat</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-theory">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--theory)"></div>
+          <div class="card-title-area">
+            <div class="card-name">类型叙事总览（Genre Narratives Overview）</div>
+            <div class="card-desc">Blake Snyder《救猫咪》提出的10种类型叙事（仅整理笔记中出现的5种）与它们的两难选择结构</div>
+          </div>
+        </div>
+        <div class="card-tldr">类型叙事不是按"动作片/爱情片/恐怖片"这种市场标签来分，而是按"故事的核心困境结构"来分……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">theory</span>
+          <div class="tag-pills">
+            <span class="tag-pill">genre</span>
+            <span class="tag-pill">narrative</span>
+            <span class="tag-pill">save-the-cat</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-theory">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--theory)"></div>
+          <div class="card-title-area">
+            <div class="card-name">冲突六大类型</div>
+            <div class="card-desc">原笔记整理的冲突六种底层形态：信息错位/力量失衡/资源稀缺/未知的深渊/现实与理想/个体与集体</div>
+          </div>
+        </div>
+        <div class="card-tldr">原笔记 p.28 在"类型叙事总结"里塞入了一张冲突六类型表——不是按"人与人/人与自然/人与自己"这种经典三分，而是按冲突的动力来源分类……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">theory</span>
+          <div class="tag-pills">
+            <span class="tag-pill">conflict</span>
+            <span class="tag-pill">narrative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-theory">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--theory)"></div>
+          <div class="card-title-area">
+            <div class="card-name">主题表达六法</div>
+            <div class="card-desc">把中心思想落地到故事层面的六种常用技法：情节/人物/语言色彩/对白/结局/意向</div>
+          </div>
+        </div>
+        <div class="card-tldr">主题（Theme）是故事的中心思想/价值观，但主题不能直接喊出来，否则就变成口号。原笔记 p.4-5 整理了六种把主题落到故事层面的方法……</div>
+        <div class="card-footer">
+          <span class="badge badge-stable">stable</span>
+          <span class="type-tag">theory</span>
+          <div class="tag-pills">
+            <span class="tag-pill">theme</span>
+            <span class="tag-pill">expression</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-theory">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--theory)"></div>
+          <div class="card-title-area">
+            <div class="card-name">故事核与人物反差</div>
+            <div class="card-desc">"一句话故事 = 人物 + 行动"的结构公式，人物与行动之间必须构成反差以产生张力</div>
+          </div>
+        </div>
+        <div class="card-tldr">故事核是艺考编讲故事的第一工作——把整个故事用一句话概括。公式是：故事核 = 谁 + 做什么 = 人物 + 行动，且人物与行动之间必须构成反差……</div>
+        <div class="card-footer">
+          <span class="badge badge-stable">stable</span>
+          <span class="type-tag">theory</span>
+          <div class="tag-pills">
+            <span class="tag-pill">story-core</span>
+            <span class="tag-pill">contrast</span>
+            <span class="tag-pill">exam</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-theory">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--theory)"></div>
+          <div class="card-title-area">
+            <div class="card-name">电影分析方法论（Film Analysis Method）</div>
+            <div class="card-desc">如何系统性地观看、记录与分析电影，从叙事沉浸升级为技术批评</div>
+          </div>
+        </div>
+        <div class="card-tldr">分析一部电影的基础是：至少看两遍。第一遍进行叙事沉浸（narrative immersion），第二遍进行技术分析——超越"电影的不可见性（cinematic invisibility）"……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">theory</span>
+          <div class="tag-pills">
+            <span class="tag-pill">film-analysis</span>
+            <span class="tag-pill">methodology</span>
+            <span class="tag-pill">艺考</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONCEPTS ===== -->
+  <section class="section" id="concepts">
+    <div class="section-header">
+      <div class="section-accent" style="background:var(--concepts)"></div>
+      <h2 style="color:var(--concepts)">概念层 Concepts</h2>
+      <span class="section-count">16 条笔记</span>
+    </div>
+    <p class="section-desc">人物设计、叙事机制、视听语言、声音、对白、意向象征——核心概念的原子化卡片</p>
+
+    <!-- CHARACTER -->
+    <div class="sub-section">
+      <div class="sub-section-title">人物 Character</div>
+      <div class="card-grid">
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">人物三位一体（可怜/可信/可爱）</div>
+              <div class="card-desc">艺考编讲故事最核心的人物身份设计法，用"可怜+可信+可爱"三层制造共情，让观众愿意跟主角走</div>
+            </div>
+          </div>
+          <div class="card-tldr">可怜 + 可信 + 可爱 是艺考编讲故事里人物身份设计的"三角模板"——给主角同时赋予三种共情标签……</div>
+          <div class="card-footer">
+            <span class="badge badge-stable">stable</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">character</span>
+              <span class="tag-pill">sympathy</span>
+              <span class="tag-pill">trinity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">救猫咪时刻（Save the Cat Moment）</div>
+              <div class="card-desc">Blake Snyder 提出的人物入场"可爱化"操作——让主角做一件无功利的美好小事，锁定观众的好感</div>
+            </div>
+          </div>
+          <div class="card-tldr">救猫咪是 Blake Snyder 2005 年在 Save the Cat! 里提出的概念——指主角出场后做的一件无功利的美好小事，功能是让观众"喜欢上他"……</div>
+          <div class="card-footer">
+            <span class="badge badge-stable">stable</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">character</span>
+              <span class="tag-pill">likability</span>
+              <span class="tag-pill">snyder</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">人物弧光机制（缺点→困境→欲望→目标）</div>
+              <div class="card-desc">p.48《百元之恋》给出的人物弧光单向链条，让缺点在故事中被修正、困境被解决</div>
+            </div>
+          </div>
+          <div class="card-tldr">人物弧光（Character Arc）是人物从起点到终点的内在变化曲线。p.48 给出了一条具体的单向链条：缺点 → 困境 → 欲望 → 目标 → 行动 → 结局……</div>
+          <div class="card-footer">
+            <span class="badge badge-stable">stable</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">character</span>
+              <span class="tag-pill">arc</span>
+              <span class="tag-pill">transformation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">欲望 / 目标 / 动机</div>
+              <div class="card-desc">"缺点→困境→欲望→目标"的人物驱动链条，以及原始欲望（名利权情）与高级欲望（奉献牺牲正义）的分层</div>
+            </div>
+          </div>
+          <div class="card-tldr">原笔记里关于"人物为什么动起来"给出了两条并行的线：p.33 的三要素：身份/欲望/动作——静态结构；p.48 的驱动链：缺点→困境→欲望→目标——动态流程……</div>
+          <div class="card-footer">
+            <span class="badge badge-stable">stable</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">motivation</span>
+              <span class="tag-pill">desire</span>
+              <span class="tag-pill">goal</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- NARRATIVE -->
+    <div class="sub-section">
+      <div class="sub-section-title">叙事 Narrative</div>
+      <div class="card-grid">
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">激励事件（Inciting Incident）</div>
+              <div class="card-desc">故事前 1/4 发生的、彻底打破主角生活平衡的第一个重大事件，是三幕剧情节点1 = 十五节拍催化剂</div>
+            </div>
+          </div>
+          <div class="card-tldr">激励事件是故事前 1/4 发生的、彻底打破主角生活平衡的第一个重大事件。它同时出现在两种剧作术语体系里：三幕剧的情节点 1（Plot Point 1）、十五节拍表的催化剂（Catalyst）……</div>
+          <div class="card-footer">
+            <span class="badge badge-stable">stable</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">narrative</span>
+              <span class="tag-pill">plot-point</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">张力三层（人物 / 情节 / 场面）</div>
+              <div class="card-desc">p.40 原笔记里最尖锐的原创理论——把叙事张力拆解为人物、情节、场面三层，每层各有两对对立项</div>
+            </div>
+          </div>
+          <div class="card-tldr">原笔记 p.40 在"故事核与人物反差"一节埋了一条可能是全书最锋利的原创理论：叙事张力不是一个平面概念，而是三层叠加——人物张力、情节张力、场面张力……</div>
+          <div class="card-footer">
+            <span class="badge badge-stable">stable</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">narrative</span>
+              <span class="tag-pill">tension</span>
+              <span class="tag-pill">contrast</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CINEMATIC LANGUAGE -->
+    <div class="sub-section">
+      <div class="sub-section-title">视听语言 Cinematic Language</div>
+      <div class="card-grid">
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">视听语言总表（景别/角度/光线/色彩/构图/运镜/蒙太奇）</div>
+              <div class="card-desc">整合 p.25-27 与 p.35 的视听语言条目，按七大类建立查阅总表</div>
+            </div>
+          </div>
+          <div class="card-tldr">视听语言是艺考统考的重磅考点，原笔记在 p.25-27 和 p.35 用"每部电影各对应一组视听元素"的散列方式记录。本卡把这些散落条目按七大类重新整理为一张可查的总表……</div>
+          <div class="card-footer">
+            <span class="badge badge-stable">stable</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">cinematic-language</span>
+              <span class="tag-pill">cinematography</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">场面调度与走位（Blocking & Mise-en-Scène）</div>
+              <div class="card-desc">人物走位与空间关系如何揭示权力动态、情感关系与主题意涵</div>
+            </div>
+          </div>
+          <div class="card-tldr">"走位（Blocking）是人物、道具与场景布置之间的物理关系。"走位是场面调度（mise-en-scène）的核心组成部分——谁站在哪里、面对谁、距离多远，在不说一句台词的情况下就已经建立了人物的权力关系……</div>
+          <div class="card-footer">
+            <span class="badge badge-draft">draft</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">mise-en-scene</span>
+              <span class="tag-pill">blocking</span>
+              <span class="tag-pill">艺考</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">景别类型（Shot Types）</div>
+              <div class="card-desc">从大远景到极端特写的完整景别谱系，及叙事功能与情感含义</div>
+            </div>
+          </div>
+          <div class="card-tldr">景别是摄影机与被摄对象之间距离（以及焦距选择）在画面上形成的"画框截取范围"。从大远景到极端特写，每一个景别都携带不同的叙事功能与情感信号……</div>
+          <div class="card-footer">
+            <span class="badge badge-draft">draft</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">shot-types</span>
+              <span class="tag-pill">景别</span>
+              <span class="tag-pill">艺考</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">摄影机角度（Camera Angles）</div>
+              <div class="card-desc">平视/俯视/仰视/斜角等拍摄角度的情绪含义与权力表达逻辑</div>
+            </div>
+          </div>
+          <div class="card-tldr">"摄影机角度是表达场景情绪或传达人物处境与社会地位的重要工具。"不同角度在观众潜意识中构建权力关系与情绪基调……</div>
+          <div class="card-footer">
+            <span class="badge badge-draft">draft</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">camera-angles</span>
+              <span class="tag-pill">角度</span>
+              <span class="tag-pill">艺考</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">摄影机运动（Camera Movement）</div>
+              <div class="card-desc">摇/推/跟/升降/手持/斯坦尼康各类运镜的叙事功能与情感效果</div>
+            </div>
+          </div>
+          <div class="card-tldr">摄影机运动是"第四堵墙"的动态形式——固定机位给观众以全知者的安全感，而运动镜头则把观众带入空间、跟随人物或主动引导视线……</div>
+          <div class="card-footer">
+            <span class="badge badge-draft">draft</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">camera-movement</span>
+              <span class="tag-pill">运镜</span>
+              <span class="tag-pill">艺考</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">灯光技术（Lighting Techniques）</div>
+              <div class="card-desc">硬光/软光/三点布光/高调/低调/逆光等布光体系的情绪功能与实操逻辑</div>
+            </div>
+          </div>
+          <div class="card-tldr">"电影灯光同时创造照明与阴影。光影的相互作用表达场景情绪、定义人物性格，并在银幕上塑造电影空间。"灯光不只是"让演员看清楚"的技术手段，而是叙事与情感语义的直接载体……</div>
+          <div class="card-footer">
+            <span class="badge badge-draft">draft</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">lighting</span>
+              <span class="tag-pill">灯光</span>
+              <span class="tag-pill">艺考</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">画幅比例（Aspect Ratio）</div>
+              <div class="card-desc">从学院比例到变形宽银幕的完整画幅谱系，及其对叙事情绪的影响</div>
+            </div>
+          </div>
+          <div class="card-tldr">画幅比例（Aspect Ratio）是银幕宽度与高度之比，它在物理上决定了"观众看到多少世界"，在心理上塑造着封闭感、史诗感与亲密感……</div>
+          <div class="card-footer">
+            <span class="badge badge-draft">draft</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">aspect-ratio</span>
+              <span class="tag-pill">宽银幕</span>
+              <span class="tag-pill">anamorphic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">构图法则（Composition Styles）</div>
+              <div class="card-desc">15种核心构图法、情绪速查表与13种色调系统，考场三分钟可用的视觉决策工具</div>
+            </div>
+          </div>
+          <div class="card-tldr">构图（Composition）是导演和摄影师在画框内安排视觉元素的方式——它决定观众的视线走向，传递情绪与权力关系，并赋予画面"可读性"……</div>
+          <div class="card-footer">
+            <span class="badge badge-draft">draft</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">composition</span>
+              <span class="tag-pill">构图</span>
+              <span class="tag-pill">color-grading</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SOUND -->
+    <div class="sub-section">
+      <div class="sub-section-title">声音 Sound</div>
+      <div class="card-grid">
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">声音设计（Sound Design）</div>
+              <div class="card-desc">叙事性声音的分类体系——画内/画外音、拟音、音乐、沉默的叙事功能</div>
+            </div>
+          </div>
+          <div class="card-tldr">电影声音不是现实的被动录制，而是与图像平等的叙事语言。声音设计的核心分类是画内音（diegetic）vs. 画外音（nondiegetic）——前者存在于故事世界，后者来自故事世界之外……</div>
+          <div class="card-footer">
+            <span class="badge badge-draft">draft</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">sound-design</span>
+              <span class="tag-pill">diegetic</span>
+              <span class="tag-pill">foley</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DIALOGUE -->
+    <div class="sub-section">
+      <div class="sub-section-title">对白 Dialogue</div>
+      <div class="card-grid">
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">六种台词技巧</div>
+              <div class="card-desc">原笔记 p.24 整理的打断/反问/压缩/角色/沉默/避免准确直接六种台词技法，以家长/成人/孩子三层对话口径</div>
+            </div>
+          </div>
+          <div class="card-tldr">原笔记 p.24 列出了六种台词技巧：打断、反问、压缩、角色、沉默、避免准确直接的回应——它们的共同目标是让台词脱离"生活对话"，变成"故事对话"……</div>
+          <div class="card-footer">
+            <span class="badge badge-draft">draft</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">dialogue</span>
+              <span class="tag-pill">exam</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SYMBOLISM -->
+    <div class="sub-section">
+      <div class="sub-section-title">意向象征 Symbolism</div>
+      <div class="card-grid">
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">动物意向（Animal Symbolism in Film）</div>
+              <div class="card-desc">电影中动物作为人性化身的意向系统，原笔记 p.37-39 按动物种类整理的常用寓意速查表</div>
+            </div>
+          </div>
+          <div class="card-tldr">动物意向是电影意向系统里最常见的一支——"不同的动物属性寓意人类的七情六欲和复杂的人性""电影中的动物往往是人性的化身"……</div>
+          <div class="card-footer">
+            <span class="badge badge-stable">stable</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">symbolism</span>
+              <span class="tag-pill">imagery</span>
+              <span class="tag-pill">animal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-concepts">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--concepts)"></div>
+            <div class="card-title-area">
+              <div class="card-name">道具象征（Prop Symbolism）</div>
+              <div class="card-desc">电影中道具作为意向载体的通用规则，以及原笔记里手套/车/面具/紧张道具/悬念道具等具体条目</div>
+            </div>
+          </div>
+          <div class="card-tldr">道具（Prop）在电影里有两种功能：工具性（执行情节的物件）和象征性（传达主题/人性的意向）。原笔记 p.1、p.6、p.11、p.36 散落记录了多组道具条目……</div>
+          <div class="card-footer">
+            <span class="badge badge-draft">draft</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">symbolism</span>
+              <span class="tag-pill">prop</span>
+              <span class="tag-pill">imagery</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GENRE ===== -->
+  <section class="section" id="genre">
+    <div class="section-header">
+      <div class="section-accent" style="background:var(--genre)"></div>
+      <h2 style="color:var(--genre)">类型层 Genre</h2>
+      <span class="section-count">5 条笔记</span>
+    </div>
+    <p class="section-desc">Snyder 10 类型拆解与惊悚类型专项——按故事核心困境结构分类的类型体系</p>
+    <div class="card-grid">
+
+      <div class="card card-genre">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--genre)"></div>
+          <div class="card-title-area">
+            <div class="card-name">伙伴之情型（Buddy Love）</div>
+            <div class="card-desc">Snyder 10 类型之一，双主人公互补陪伴推进剧情，核心是"人物反差 + 动态关系 + 催化剂"</div>
+          </div>
+        </div>
+        <div class="card-tldr">伙伴之情（Buddy Love）是 Snyder 10 类型里的"关系型"故事——双主人公在互相补足的动态关系中推进剧情。三元素：一个"不完整"的主人公 + 一个"伙伴" + 一种"复杂情况"……</div>
+        <div class="card-footer">
+          <span class="badge badge-stable">stable</span>
+          <span class="type-tag">theory</span>
+          <div class="tag-pills">
+            <span class="tag-pill">buddy-love</span>
+            <span class="tag-pill">snyder</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-genre">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--genre)"></div>
+          <div class="card-title-area">
+            <div class="card-name">麻烦家伙型（Dude with a Problem）</div>
+            <div class="card-desc">Snyder 10 类型之一，无辜主角 + 祸从天降 + 生死考验，主角越普通、麻烦越大、坏蛋越坏，故事越好看</div>
+          </div>
+        </div>
+        <div class="card-tldr">麻烦家伙型（Dude with a Problem）是 Snyder 10 类型里的"无辜卷入"型——一个普通甚至不如普通人的主角，被莫名卷入一场生死考验……</div>
+        <div class="card-footer">
+          <span class="badge badge-stable">stable</span>
+          <span class="type-tag">theory</span>
+          <div class="tag-pills">
+            <span class="tag-pill">dude-with-a-problem</span>
+            <span class="tag-pill">snyder</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-genre">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--genre)"></div>
+          <div class="card-title-area">
+            <div class="card-name">变迁仪式型（Rites of Passage）</div>
+            <div class="card-desc">Snyder 10 类型之一，主角因生活苦难和折磨而产生转变，最终从抵抗转为接受，获得另一种意义的胜利</div>
+          </div>
+        </div>
+        <div class="card-tldr">变迁仪式（Rites of Passage）是 Snyder 10 类型里的"内在转变"型——主角因生活中的苦难和折磨而产生转变。三元素：一个"生活的问题" + 一个"错误的方法" + 一个"真正解决问题的方法"……</div>
+        <div class="card-footer">
+          <span class="badge badge-stable">stable</span>
+          <span class="type-tag">theory</span>
+          <div class="tag-pills">
+            <span class="tag-pill">rites-of-passage</span>
+            <span class="tag-pill">snyder</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-genre">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--genre)"></div>
+          <div class="card-title-area">
+            <div class="card-name">被制度化型（Institutionalized）</div>
+            <div class="card-desc">Snyder 10 类型之一，个人与"有规则的集体"对抗后被同化或吞并，核心是"力量悬殊"</div>
+          </div>
+        </div>
+        <div class="card-tldr">被制度化（Institutionalized）是 Snyder 10 类型里的"群体型"故事——主角个人与"集体"做对抗后被同化或吞并。核心理念是"为了多数人牺牲少数人"……</div>
+        <div class="card-footer">
+          <span class="badge badge-stable">stable</span>
+          <span class="type-tag">theory</span>
+          <div class="tag-pills">
+            <span class="tag-pill">institutionalized</span>
+            <span class="tag-pill">snyder</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-genre">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--genre)"></div>
+          <div class="card-title-area">
+            <div class="card-name">惊悚片要素（前十分钟吸引法则）</div>
+            <div class="card-desc">原笔记 p.10-13 "万能钥匙 惊悚片特点 前十分钟吸引"条目整理，含职业/场景/动作/声音/词汇等紧张元素库</div>
+          </div>
+        </div>
+        <div class="card-tldr">原笔记 p.13 有一个非常具体的标题："万能钥匙 / 惊悚片特点 / 前十分钟吸引"——背后是一套惊悚片专用的元素库。它不是一个完整的类型理论，而是一张前十分钟吸引观众的设计清单……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">concept</span>
+          <div class="tag-pills">
+            <span class="tag-pill">thriller</span>
+            <span class="tag-pill">horror</span>
+            <span class="tag-pill">hook</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== STORY ELEMENTS ===== -->
+  <section class="section" id="story-elements">
+    <div class="section-header">
+      <div class="section-accent" style="background:var(--story-elements)"></div>
+      <h2 style="color:var(--story-elements)">素材层 Story Elements</h2>
+      <span class="section-count">8 条笔记</span>
+    </div>
+    <p class="section-desc">编讲故事用的扁平化素材库——人物设计/反派/道具/场景/悬念/情感/家庭/职业素材速查</p>
+    <div class="card-grid">
+
+      <div class="card card-story">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--story-elements)"></div>
+          <div class="card-title-area">
+            <div class="card-name">人物设计素材库（主角身份清单）</div>
+            <div class="card-desc">原笔记 p.1, p.11, p.14, p.18-19, p.33-34 的人物设计素材扁平化整理，含可怜/可信/可爱+底层/英雄/女性/儿童四大角色类型</div>
+          </div>
+        </div>
+        <div class="card-tldr">这是一张编讲故事用的主角身份速查表——原笔记反复出现的"怎么设计一个让观众立刻站在他一边的主角"素材。核心框架是可怜+可信+可爱三维度，配合四大主角类型（底层/英雄/女性/儿童）的具体困境清单……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">concept</span>
+          <div class="tag-pills">
+            <span class="tag-pill">story-element</span>
+            <span class="tag-pill">character</span>
+            <span class="tag-pill">library</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-story">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--story-elements)"></div>
+          <div class="card-title-area">
+            <div class="card-name">反派与缺陷素材库</div>
+            <div class="card-desc">原笔记 p.2, p.11, p.32 的反派/主角缺陷/动机扁平化整理</div>
+          </div>
+        </div>
+        <div class="card-tldr">这是一张写反派、写主角缺陷、写动机的素材清单。原笔记在 p.2, p.11, p.32 反复列出"反派为什么坏""主角有什么毛病""人冲动/说谎/说真话/背叛/选择帮助别人的动机是什么"……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">concept</span>
+          <div class="tag-pills">
+            <span class="tag-pill">antagonist</span>
+            <span class="tag-pill">flaw</span>
+            <span class="tag-pill">library</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-story">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--story-elements)"></div>
+          <div class="card-title-area">
+            <div class="card-name">道具与六大用法素材库</div>
+            <div class="card-desc">原笔记 p.44, p.46-47, p.53-73 散落的道具使用素材整合——价值/象征/悬念/反差/转折/激励/危机/高潮八种用法</div>
+          </div>
+        </div>
+        <div class="card-tldr">原笔记从 p.44 开始，用一半以上的页面反复练习"同一个道具的不同用法"——以一个道具为单位，分别写成价值/象征/悬念/反差/转折/激励/危机/高潮八种不同情节功能……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">concept</span>
+          <div class="tag-pills">
+            <span class="tag-pill">story-element</span>
+            <span class="tag-pill">prop</span>
+            <span class="tag-pill">library</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-story">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--story-elements)"></div>
+          <div class="card-title-area">
+            <div class="card-name">场景与环境设置素材库</div>
+            <div class="card-desc">原笔记 p.12-13, p.15, p.32, p.36, p.45 的场景设置扁平化整理——紧张场景/仪式感/抒情场景/危机环境/特殊时间</div>
+          </div>
+        </div>
+        <div class="card-tldr">这是一张写故事时选场景、选环境、选时间点的素材表。原笔记在多处分散列出了"什么场景自带什么情绪"的条目。本卡整合为六类场景：紧张场景、危机环境、仪式感场景、抒情场景、特殊时间点、封闭/孤立地点……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">concept</span>
+          <div class="tag-pills">
+            <span class="tag-pill">story-element</span>
+            <span class="tag-pill">scene</span>
+            <span class="tag-pill">setting</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-story">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--story-elements)"></div>
+          <div class="card-title-area">
+            <div class="card-name">悬念与冲突升级素材库</div>
+            <div class="card-desc">原笔记 p.2, p.10, p.13, p.15 的悬念设置/冲突升级/反转情节/两难抉择扁平化整理</div>
+          </div>
+        </div>
+        <div class="card-tldr">这是一张"怎么让故事越来越好看"的操作清单。原笔记在多处反复列出了悬念设置/冲突升级/反转情节/两难抉择/解决问题的具体方式……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">concept</span>
+          <div class="tag-pills">
+            <span class="tag-pill">suspense</span>
+            <span class="tag-pill">conflict</span>
+            <span class="tag-pill">library</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-story">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--story-elements)"></div>
+          <div class="card-title-area">
+            <div class="card-name">情感与关系素材库</div>
+            <div class="card-desc">原笔记 p.2-3, p.11-12, p.16, p.32, p.36, p.45-46 的拉近/疏远/信任/和解/愧疚/失望/思念素材整理</div>
+          </div>
+        </div>
+        <div class="card-tldr">这是一张写人物关系变化的素材表——怎么拉近两个人、怎么疏远两个人、怎么让人信任/和解/愧疚/冲动/思念……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">concept</span>
+          <div class="tag-pills">
+            <span class="tag-pill">emotion</span>
+            <span class="tag-pill">relation</span>
+            <span class="tag-pill">library</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-story">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--story-elements)"></div>
+          <div class="card-title-area">
+            <div class="card-name">家庭冲突素材库</div>
+            <div class="card-desc">原笔记 p.4, p.10, p.11 的家庭题材冲突设置/家庭关系冲突点/亲情主题素材整理</div>
+          </div>
+        </div>
+        <div class="card-tldr">这是专门写家庭题材故事的冲突设计清单。原笔记 p.4 的亲情主题、p.10 的家庭题材冲突设置、p.11 的家庭关系冲突点，加上 p.4 对《饮食男女》的深度拆解——整合成家庭故事的冲突引擎库。家庭故事是艺考编讲故事的最安全选择……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">concept</span>
+          <div class="tag-pills">
+            <span class="tag-pill">family</span>
+            <span class="tag-pill">conflict</span>
+            <span class="tag-pill">seed-list</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-story">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--story-elements)"></div>
+          <div class="card-title-area">
+            <div class="card-name">穿着与性格表达素材库</div>
+            <div class="card-desc">原笔记 p.60 的服饰四要素/穿着功能/性格特质形成与表现的扁平化整理</div>
+          </div>
+        </div>
+        <div class="card-tldr">原笔记 p.60 专门讨论了穿着如何建立人物——服饰四要素（色彩/质地/样式/效果）+ 穿着的四重功能（身份/场合/形象/时代）+ 遮挡类服饰 + 性格特质的形成与表现。这是视觉化建立人物的操作指南……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">concept</span>
+          <div class="tag-pills">
+            <span class="tag-pill">costume</span>
+            <span class="tag-pill">personality</span>
+            <span class="tag-pill">seed-list</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Profession sub-section -->
+    <div style="margin-top:24px">
+      <div class="sub-section-title" style="border-left-color: var(--story-elements); color: var(--text-muted);">职业素材 Profession Libraries</div>
+      <div class="card-grid">
+
+        <div class="card card-story">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--story-elements)"></div>
+            <div class="card-title-area">
+              <div class="card-name">医生职业素材库</div>
+              <div class="card-desc">原笔记 p.50-52 的医生职业细节、黑话、困境、患者/家属心理扁平化整理</div>
+            </div>
+          </div>
+          <div class="card-tldr">原笔记 p.50-52 用三页纸做了一次"医生这个职业怎么写真实"的详尽素材积累。从职业病到黑话到手术器械到科室排行到患者心理到家属困境——这是一张写医疗题材故事的真实性清单……</div>
+          <div class="card-footer">
+            <span class="badge badge-draft">draft</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">profession</span>
+              <span class="tag-pill">doctor</span>
+              <span class="tag-pill">seed-list</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-story">
+          <div class="card-top">
+            <div class="card-stripe" style="background:var(--story-elements)"></div>
+            <div class="card-title-area">
+              <div class="card-name">警察职业素材库</div>
+              <div class="card-desc">原笔记 p.58-59 的警察职业细节、职业病、手的特征、装备、警衔、关系模式扁平化整理</div>
+            </div>
+          </div>
+          <div class="card-tldr">原笔记 p.58-59 做了一次"警察这个职业怎么写真实"的素材积累——从职业病到手的特征到警服到装备到警衔到二人关系模式。跟医生职业素材库一样，这是一张让"泛泛写一个警察"变成"内行写一个警察"的真实性清单……</div>
+          <div class="card-footer">
+            <span class="badge badge-draft">draft</span>
+            <span class="type-tag">concept</span>
+            <div class="tag-pills">
+              <span class="tag-pill">profession</span>
+              <span class="tag-pill">police</span>
+              <span class="tag-pill">seed-list</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIRECTOR NOTES ===== -->
+  <section class="section" id="director-notes">
+    <div class="section-header">
+      <div class="section-accent" style="background:var(--director-notes)"></div>
+      <h2 style="color:var(--director-notes)">导演笔记 Director Notes</h2>
+      <span class="section-count">5 条笔记</span>
+    </div>
+    <p class="section-desc">直接面向创作决策的实操方法——五事件法、反差发动机、道具生场景、面试策略、分镜工作流</p>
+    <div class="card-grid">
+
+      <div class="card card-director">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--director-notes)"></div>
+          <div class="card-title-area">
+            <div class="card-name">五事件大纲法（艺考编讲故事）</div>
+            <div class="card-desc">原笔记 p.41, p.43 的五事件大纲+字数分配+每个事件的标准动作，是编讲故事的核心实操卡</div>
+          </div>
+        </div>
+        <div class="card-tldr">回答：一个 2000 字的编讲故事，应该怎么分段、每段写什么、字数怎么分配？考试时长 2.5 小时，20 分钟构思 + 130 分钟写，统考合适字数 2000 字……</div>
+        <div class="card-footer">
+          <span class="badge badge-stable">stable</span>
+          <span class="type-tag">director-note</span>
+          <div class="tag-pills">
+            <span class="tag-pill">exam</span>
+            <span class="tag-pill">outline</span>
+            <span class="tag-pill">method</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-director">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--director-notes)"></div>
+          <div class="card-title-area">
+            <div class="card-name">反差发动机法（故事核设计）</div>
+            <div class="card-desc">原笔记 p.40 的"故事核=谁+做什么"+"离水之鱼"+"张力三层"组合而成的核心创作方法</div>
+          </div>
+        </div>
+        <div class="card-tldr">回答：一句话怎么概括你的故事？概括之后，怎么保证这个故事自带吸引力？第一步写一句话故事，第二步提取故事核，第三步注入反差——让人物和行动之间构成反差……</div>
+        <div class="card-footer">
+          <span class="badge badge-stable">stable</span>
+          <span class="type-tag">director-note</span>
+          <div class="tag-pills">
+            <span class="tag-pill">contrast</span>
+            <span class="tag-pill">story-core</span>
+            <span class="tag-pill">method</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-director">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--director-notes)"></div>
+          <div class="card-title-area">
+            <div class="card-name">道具生场景法（命题作文应对）</div>
+            <div class="card-desc">从"给一个词"到"写出五事件"的实操路径——道具→反差→场景→大纲→2000字</div>
+          </div>
+        </div>
+        <div class="card-tldr">回答：考试给了一个词（雨伞/钥匙/火柴/戒指），怎么在 20 分钟内从这个词构思出一个 2000 字的完整故事？Step 1 道具八法快扫，Step 2 道具→人物……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">director-note</span>
+          <div class="tag-pills">
+            <span class="tag-pill">exam</span>
+            <span class="tag-pill">prop</span>
+            <span class="tag-pill">method</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-director">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--director-notes)"></div>
+          <div class="card-title-area">
+            <div class="card-name">艺考面试策略（编讲故事+锐评+故事接龙）</div>
+            <div class="card-desc">原笔记 p.41-43 的校考面试策略、编讲故事标准、故事接龙方法、锐评技巧整理</div>
+          </div>
+        </div>
+        <div class="card-tldr">回答：校考面试里，怎么讲好、怎么接好、怎么评好？校考面试的本质是自圆其说——不是"对不对"，而是"你的逻辑通不通"……</div>
+        <div class="card-footer">
+          <span class="badge badge-stable">stable</span>
+          <span class="type-tag">director-note</span>
+          <div class="tag-pills">
+            <span class="tag-pill">exam</span>
+            <span class="tag-pill">interview</span>
+            <span class="tag-pill">method</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-director">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--director-notes)"></div>
+          <div class="card-title-area">
+            <div class="card-name">分镜头工作流（Storyboard Workflow）</div>
+            <div class="card-desc">从剧本到分镜头脚本再到动态分镜（animatic）的完整工作流，含 Storyboarder 三步法与艺考应用</div>
+          </div>
+        </div>
+        <div class="card-tldr">回答："我有剧本了，下一步怎么把脑海中的画面变成可沟通的视觉语言？"分镜头脚本（Storyboard）是导演把抽象文字转化为具体画面计划的第一步——也是在实际拍摄之前，成本最低的错误修正机会……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">director-note</span>
+          <div class="tag-pills">
+            <span class="tag-pill">storyboard</span>
+            <span class="tag-pill">directing</span>
+            <span class="tag-pill">分镜</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== COMPARISON ===== -->
+  <section class="section" id="comparison">
+    <div class="section-header">
+      <div class="section-accent" style="background:var(--comparison)"></div>
+      <h2 style="color:var(--comparison)">对比层 Comparison</h2>
+      <span class="section-count">3 条笔记</span>
+    </div>
+    <p class="section-desc">把两个相近概念放在同一张桌上——东西方标准、类型对比、形式主义 vs 现实主义</p>
+    <div class="card-grid">
+
+      <div class="card card-comparison">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--comparison)"></div>
+          <div class="card-title-area">
+            <div class="card-name">东西方故事价值标准对比</div>
+            <div class="card-desc">原笔记 p.40 的"民间标准"——东方"文以载道" vs 西方"探索人性"+ 统考 vs 校考适配</div>
+          </div>
+        </div>
+        <div class="card-tldr">东方：人应该是什么样子——寄托真善美的精神和品质；西方：人可能是什么样子——窥见现实中人性之百态。统考偏东方，校考偏西方……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">comparison</span>
+          <div class="tag-pills">
+            <span class="tag-pill">east-west</span>
+            <span class="tag-pill">story</span>
+            <span class="tag-pill">standard</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-comparison">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--comparison)"></div>
+          <div class="card-title-area">
+            <div class="card-name">伙伴之情 vs 被制度化（两种"关系型"故事）</div>
+            <div class="card-desc">Snyder 10 类型中两个都涉及"人与人关系"的类型对比——双人 vs 集体</div>
+          </div>
+        </div>
+        <div class="card-tldr">伙伴之情：两个人因互补而靠近 → 因冲突而分离 → 因需要而重聚；被制度化：一个人进入集体 → 被同化或反抗 → 被吞噬或摧毁集体……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">comparison</span>
+          <div class="tag-pills">
+            <span class="tag-pill">buddy-love</span>
+            <span class="tag-pill">institutionalized</span>
+            <span class="tag-pill">snyder</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-comparison">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--comparison)"></div>
+          <div class="card-title-area">
+            <div class="card-name">形式主义 vs. 现实主义（Formalism vs. Realism）</div>
+            <div class="card-desc">两大电影美学流派的核心主张、技术手段与代表作品对比</div>
+          </div>
+        </div>
+        <div class="card-tldr">形式主义（Formalism）：用电影技术手段主动赋予戏剧行动以意义——摄影机不是记录工具，而是表意工具；现实主义（Realism）：尊重电影的纪录本质，最小化人工干预，让现实自己说话……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">comparison</span>
+          <div class="tag-pills">
+            <span class="tag-pill">formalism</span>
+            <span class="tag-pill">realism</span>
+            <span class="tag-pill">film-theory</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CASE STUDIES ===== -->
+  <section class="section" id="case-studies">
+    <div class="section-header">
+      <div class="section-accent" style="background:var(--case-studies)"></div>
+      <h2 style="color:var(--case-studies)">案例层 Case Studies</h2>
+      <span class="section-count">3 条笔记</span>
+    </div>
+    <p class="section-desc">以具体影片为锚点的深度拆解——理论框架在真实电影中的落地验证</p>
+    <div class="card-grid">
+
+      <div class="card card-cases">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--case-studies)"></div>
+          <div class="card-title-area">
+            <div class="card-name">《霸王别姬》案例拆解</div>
+            <div class="card-desc">原笔记 p.31 的详细拆解——忠诚主题/双叙述方式/人物形象/中国特色/被制度化分析</div>
+          </div>
+        </div>
+        <div class="card-tldr">原笔记 p.31 用整页纸拆解了陈凯歌的《霸王别姬》——这是中国电影最重要的被制度化 + 变迁仪式混血案例。主题是忠诚，核心是"从一而终"……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">concept</span>
+          <div class="tag-pills">
+            <span class="tag-pill">case-study</span>
+            <span class="tag-pill">institutionalized</span>
+            <span class="tag-pill">chinese-cinema</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-cases">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--case-studies)"></div>
+          <div class="card-title-area">
+            <div class="card-name">《百元之恋》案例拆解</div>
+            <div class="card-desc">原笔记 p.48-49 的详细拆解——缺点→困境→欲望→目标→行动→结局完整链条+五事件实操示范</div>
+          </div>
+        </div>
+        <div class="card-tldr">原笔记 p.48-49 把《百元之恋》作为人物弧光机制的完整教学案例——从缺点到目标的完整链条 + 五事件大纲的实操示范。这是本库中最接近艺考编讲故事实战的案例……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">concept</span>
+          <div class="tag-pills">
+            <span class="tag-pill">case-study</span>
+            <span class="tag-pill">character-arc</span>
+            <span class="tag-pill">rites-of-passage</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-cases">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--case-studies)"></div>
+          <div class="card-title-area">
+            <div class="card-name">《消失的爱人》案例拆解</div>
+            <div class="card-desc">原笔记 p.10-11 的叙事结构+人物反差+惊悚片元素整合分析</div>
+          </div>
+        </div>
+        <div class="card-tldr">原笔记 p.10-11 拆解了《消失的爱人》的双视角叙事结构 + 艾米的人物反差设计，同时以它为锚点展开了大量惊悚片素材积累。本片是惊悚片 + 被制度化（婚姻作为"有规则的集体"）的混血……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">concept</span>
+          <div class="tag-pills">
+            <span class="tag-pill">case-study</span>
+            <span class="tag-pill">thriller</span>
+            <span class="tag-pill">narrative-structure</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== INDEX ===== -->
+  <section class="section" id="index">
+    <div class="section-header">
+      <div class="section-accent" style="background:var(--index)"></div>
+      <h2 style="color:var(--index)">索引层 Index</h2>
+      <span class="section-count">4 条笔记</span>
+    </div>
+    <p class="section-desc">知识库的导航基础设施——影片案例反查、术语表、质量审计、世界电影摄影风格速查</p>
+    <div class="card-grid">
+
+      <div class="card card-index">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--index)"></div>
+          <div class="card-title-area">
+            <div class="card-name">影片案例索引</div>
+            <div class="card-desc">知识库中所有引用过的影片→出现位置的反向索引，按首字母排序</div>
+          </div>
+        </div>
+        <div class="card-tldr">本索引列出知识库中被引用为案例的所有影片，指向它们出现的笔记。用于快速查找"某部电影在哪些笔记中被讨论过"。按中/英文片名双重索引……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">index</span>
+          <div class="tag-pills">
+            <span class="tag-pill">index</span>
+            <span class="tag-pill">film</span>
+            <span class="tag-pill">case</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-index">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--index)"></div>
+          <div class="card-title-area">
+            <div class="card-name">术语表</div>
+            <div class="card-desc">知识库核心术语的中英文对照+一句话定义+指向详细笔记</div>
+          </div>
+        </div>
+        <div class="card-tldr">按拼音首字母排序。每条术语给出中文名 / 英文名 / 一句话定义 / 指向详细笔记。覆盖被制度化、变迁仪式、B故事、冲突六类、道具八法、反差三层、伙伴之情等核心术语……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">index</span>
+          <div class="tag-pills">
+            <span class="tag-pill">glossary</span>
+            <span class="tag-pill">term</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-index">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--index)"></div>
+          <div class="card-title-area">
+            <div class="card-name">Ω 自检报告 v1.0</div>
+            <div class="card-desc">知识库 v1.0 完成后的全量审计——覆盖率、质量、缺口、扩展建议</div>
+          </div>
+        </div>
+        <div class="card-tldr">基于 omega-film-prompt.md 优化器的自检逻辑，对 v1.0 知识库做全量审计。源材料覆盖率达 90%+，含 PDF 各章节是否已建立对应笔记的完整清单……</div>
+        <div class="card-footer">
+          <span class="badge badge-stable">stable</span>
+          <span class="type-tag">index</span>
+          <div class="tag-pills">
+            <span class="tag-pill">omega</span>
+            <span class="tag-pill">audit</span>
+            <span class="tag-pill">v1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-index">
+        <div class="card-top">
+          <div class="card-stripe" style="background:var(--index)"></div>
+          <div class="card-title-area">
+            <div class="card-name">世界电影摄影风格速查（World Cinema Reference）</div>
+            <div class="card-desc">按时代组织的经典真人电影摄影风格索引，速查"某时代/某视觉风格"对应哪些代表作</div>
+          </div>
+        </div>
+        <div class="card-tldr">速查"某个时代/某种视觉风格"对应哪些代表作，为创作寻找摄影参照（cinematography reference）。本索引是反查工具，不是分析文章。覆盖默片时代（1920s）至当代……</div>
+        <div class="card-footer">
+          <span class="badge badge-draft">draft</span>
+          <span class="type-tag">index</span>
+          <div class="tag-pills">
+            <span class="tag-pill">cinematography</span>
+            <span class="tag-pill">film-history</span>
+            <span class="tag-pill">世界电影</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div style="margin-bottom:8px; font-size:13px; color:var(--text-muted)">
+    PKTFILM 电影学习知识库 · 56 条笔记 · 8 层架构
+  </div>
+  <div>
+    基于《故事元素积累6》(73p) · 结合 filmtheory.net、DirectorsConsole、Save the Cat! 等多方来源 · 生成于 2026-04-21
+  </div>
+  <div style="margin-top:12px; font-size:11px; color:var(--text-dim)">
+    本知识库遵循 CLAUDE.md 守则，目标是"可持续进化"，任何新笔记均带 Changelog
+  </div>
+</footer>
+
+</body>
+</html>
