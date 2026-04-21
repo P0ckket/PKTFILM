@@ -10,14 +10,14 @@ sources:
     cite: "故事元素积累6_merged.pdf"
     locator: "p.1-73"
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-21
 ---
 
 # 电影学习知识库 — Map of Content
 
 > 这是 E:/director 知识库的**唯一入口地图**。按"问题"而非"人物"组织。
 >
-> **当前版本**：v1.0（基于《故事元素积累6》73页单材料，共 **36 篇笔记**）
+> **当前版本**：v1.2（新增视听语言扩展卡 + 声音设计 + 形式主义/现实主义比较 + 分析方法论，共 **51 篇笔记**）
 > **下一步**：等待用户提供其他 PDF，走 ingest 工作流做增量扩展。
 
 ## 一、这个知识库想回答什么？
@@ -39,6 +39,7 @@ updated: 2026-04-06
 - [冲突六大类型](../theory/conflict-six-types.md)
 - [主题表达六法](../theory/theme-expression-methods.md)
 - [故事核与人物反差](../theory/story-core-and-contrast.md)
+- [电影分析方法论（两遍观影法/四维度框架/分析vs评论）](../theory/film-analysis-method.md)
 
 ### 概念卡（concepts）
 
@@ -54,6 +55,16 @@ updated: 2026-04-06
 
 #### 视听语言
 - [视听语言总览（景别/角度/光线/色彩/构图/运镜/蒙太奇/音响）](../concepts/cinematic-language/visual-language-overview.md)
+- [场面调度与走位（180°轴线规则/空间关系/权力表达）](../concepts/cinematic-language/blocking-mise-en-scene.md)
+
+#### 视听语言（expanded）
+- [景别类型（大远景→大特写/POV/跳切/淡入淡出）](../concepts/cinematic-language/shot-types.md)
+- [摄影机角度（平视/俯视/仰视/荷兰角/鸟瞰）](../concepts/cinematic-language/camera-angles.md)
+- [摄影机运动（摇/推轨/升降/手持/斯坦尼康）](../concepts/cinematic-language/camera-movement.md)
+- [灯光技术（硬光/软光/三点布光/高调/低调/逆光）](../concepts/cinematic-language/lighting-techniques.md)
+
+#### 声音（sound）
+- [声音设计（画内音/画外音/拟音/音乐/沉默）](../concepts/sound/sound-design.md)
 
 #### 对话
 - [六种台词技巧](../concepts/dialogue/dialogue-six-techniques.md)
@@ -95,6 +106,7 @@ updated: 2026-04-06
 ### 比较卡（comparison）
 - [东西方故事价值标准（文以载道 vs 探索人性）](../comparison/east-west-story-standards.md)
 - [伙伴之情 vs 被制度化](../comparison/buddy-love-vs-institutionalized.md)
+- [形式主义 vs. 现实主义（Formalism vs. Realism）](../comparison/formalism-vs-realism.md)
 
 ### 反查索引（index）
 - [本文件（MOC）](./moc.md)
@@ -116,20 +128,21 @@ updated: 2026-04-06
 - 优化旧笔记时走 `prompt/prompts/omega-film-prompt.md` 优化器
 - 任何写盘都必须附 Changelog，不得静默覆盖
 
-## 五、v1.0 统计
+## 五、v1.2 统计
 
 | 层 | 文件数 |
 |---|---|
-| theory/ | 6 |
-| concepts/ | 10 |
+| theory/ | 7 |
+| concepts/ | 16 |
 | genre/ | 5 |
 | story-elements/ | 10 |
 | director-notes/ | 4 |
-| comparison/ | 2 |
+| comparison/ | 3 |
 | case-studies/ | 3 |
 | index/ | 3 |
-| **合计** | **43 个入口（含 index）** |
+| **合计** | **51 个入口（含 index）** |
 
 ## Changelog
+- **2026-04-21 v1.2** — 新增 8 篇视听语言扩展笔记：景别/角度/运镜/灯光/声音设计/场面调度（concepts/cinematic-language/ + concepts/sound/）；新增比较卡"形式主义 vs. 现实主义"；新增理论卡"电影分析方法论"。MOC 新增"视听语言（expanded）"与"声音（sound）"子节。
 - **2026-04-06 v1.1** — 所有 [[wiki-link]] 改为标准 Markdown 相对链接，兼容 VSCode 原生预览与 GitHub 渲染。
 - **2026-04-06 v1.0** — 基于 故事元素积累6_merged.pdf 的 73 页全量内容建立完整 MOC。36 篇笔记 + 3 索引全部实际创建完毕。
